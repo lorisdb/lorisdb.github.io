@@ -817,6 +817,9 @@ label, input, textarea {
 	width: 100%;
 	float: none;
 }
+.credits-box {
+	width: 25%;
+}
 }
 
 @media screen and (max-width: 700px) {
@@ -831,6 +834,7 @@ label, input, textarea {
 	padding-left: 0;
 	padding-right: 0;
 }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -896,5 +900,8 @@ label, input, textarea {
 }
 #map iframe {
 	height: 100%;
+}
+.credits-box {
+	width: 33.33%;
 }
 }
