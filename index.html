@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LORIS | Home Page</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="LORIS is">
+  <meta name="author" content="Derek Lo 2015">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400italic,100,300,400,500' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css">
+<![endif]-->
+<link rel="stylesheet" href="css/slicknav.css">
+<link href="css/common_styles.css" rel="stylesheet" type="text/css">
+<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+
+<!-- jquery easing script -->
+
+<script>
+$( document ).ready( function() {
+  $('a.ease').bind('click',function(event){
+    var $anchor = $(this);
+
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500,'easeInOutExpo');
+    event.preventDefault();
+  });
+});
+</script>
+
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="top">
+      <div class="logodiv">
+        <img src="images/LORIS-logo-color.png" alt=""/>
+      </div>
+      <nav>
+        <ul id="main-nav">
+          <li><a href="index.html" class="first active">Home</a></li>
+          <li><a href="features.html" class="">Features</a></li>
+          <li><a href="getstarted.html" class="">Get Started</a></li>
+          <li><a href="faq.html" class="">FAQ</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+
+        <!-- slicknav -->
+        <div id="menu">
+            <ul>
+              <li><a href="index.html" class="menu-fx active" >Home</a></li>
+              <li><a href="features.html" class="menu-fx ">Features</a></li>
+              <li><a href="getstarted.html" class="menu-fx">Get Started</a></li>
+              <li><a href="faq.html" class="menu-fx">FAQ</a></li>
+              <li><a href="contact.html" class="menu-fx">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="to-top">
+      <div class="parallax-one">
+        <div class="content">
+          <p class="topcontent bottom-margin"> <span class="dropcap">LORIS</span> (Longitudinal Online Research and Imaging System) is web-based <stong>data</strong> and <strong>project management</strong> software for <strong>neuroimaging research</strong> studies. It is an <strong>open-source framework</strong> for storing and processing <strong>behavioural, clinical, neuroimaging and genetics data</strong>. LORIS also makes it <strong>easy to manage</strong> large datasets acquired over time in a longitudinal study, or at different locations in a large <strong>multi-site</strong> study.</p>
+          
+          <div class="three-column">
+            <div class="blue-content">
+              <h3>Data Collection</h3>
+              <p>LORIS features an easy to use interface to enter clinical data. Datasets are validated and cleaned of identifying information.</p>
+            </div>
+          </div>
+          
+          <div class="three-column">
+            <div class="blue-content">
+              <h3>Data Management</h3>
+              <p>During data entry, strict completion rules, restricted field types, and rule  checking actively enforce data validity according to project standards.</p>
+            </div>            
+          </div>
+          
+          <div class="three-column ">
+            <div class="blue-content">
+              <h3>Accurate Results</h3>
+              <p>Separate database modules perform data validation and provide feedback based on automated and manual checks.</p>
+            </div> 
+          </div>
+          <div class="clear"></div>        
+          <div>
+            <a href="https://demo.loris.ca/main.php" class="button demo" target="_blank">TRY THE DEMO</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="block grey">
+        <h1 class="mobile-center">Simplicity in Versitility</h1>
+        <p>LORIS is a flexible, customizable, and <em>OPEN SOURCE</em> neuroimaging database that is suitable for multiple types of projects.</p>
+        <div class="holder-half">
+          <div class="two-column">
+            <div class="clear-content">
+              <img src="images/ICON-multisite.png">
+              <h3>Multi-Center Study</h3>
+              <p>LORIS enables you to enter, organize, and process data gathered from multiple centers.</p>
+            </div>          
+          </div>
+          <div class="two-column">
+            <div class="clear-content">
+              <img src="images/ICON-clinical.png">
+              <h3>Longitudinal</h3>
+              <p>LORIS excels at processing data collected from large populations over time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="holder-half">
+          <div class="two-column">
+            <div class="clear-content">
+              <img src="images/ICON-institutional.png">
+              <h3>Clinical Research</h3>
+              <p>LORIS supports data collected from clinical research that follows a pre-defined plan or protocol through user customization.</p>
+            </div>
+          </div>
+          <div class="two-column">
+            <div class="clear-content">
+              <img src="images/ICON-public.png">
+              <h3>Public Dataset</h3>
+              <p>LORIS can assist the user in comparing data collected from private sources and public datasets.</p>
+            </div>          
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section>
+      <div class="block white background-one ">
+        <div class="three-column">
+          <div class="clear-content">
+            <h1>Features</h1>
+            <p>LORIS contains a robust toolset to accomplish a variety of tasks including:</p>
+            <ul>
+              <li>Data Collection</li>
+              <li>Data Management</li>
+              <li>Quality Control</li>
+              <li>Imaging</li>
+              <li>Visualization</li>
+              <li>Data Dissemination</li>
+              <li>Customizable</li>
+              <li>Responsive Design</li>
+            </ul>
+            <a href="features.html" class="button demo">Find Out More</a>
+          </div>
+        </div>
+        <div class="three-column-two-span content-right">
+          <img src="images/LORIS-home-screen.png">
+        </div>
+    </section>
+    <div class="clear"></div>
+
+    <section>
+      <div class="block blue ">
+        <h1>Get It Now: It's <em>OPEN SOURCE</em></h1>
+        <div class="three-column">
+          <div class="clear-content">
+            <i class="fa fa-cloud-download big center"></i>
+            <h2 class="center">1. Download</h2>
+            <p>LORIS can be downloaded from Github repository for:</p>
+            <h2><a href="#"><i class="fa fa-download"></i> LINUX</a></h2>
+          </div>
+        </div>
+
+        <div class="three-column">
+          <div class="clear-content">
+            <i class="fa fa-laptop big center"></i>
+            <h2 class="center">2. Install</h2>
+            <p>Once downloaded, install on your system by referring to the <a href="#" class="underline">documentation</a>.</p>
+          </div>
+        </div>  
+
+        <div class="three-column">
+          <div class="clear-content">
+            <i class="fa fa-wrench big center"></i>
+            <h2 class="center">3. Configure</h2>
+            <p>LORIS can be configured for various tasks and studies. Please refer to the <a href="#" class="underline">documentation</a>.</p>
+          </div>
+        </div> 
+        <div class="clear"></div>  
+        <a href="getstarted.html" class="button help">Need More Help?</a>
+    </section>
+
+    <section id="map">
+      <h1 class="mobile-center">LORIS Collaborators</h1>
+      <iframe src="map.html" frameborder="0" style="border:0"></iframe>
+    </section>
+
+    <section id="credits">
+      <div class="credits grey">
+        <h1 class=""> LORIS Team </h1>
+        <div class="credits-holder">
+          <div class="credits-box">
+            <img src="images/LORIS-team-team.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-justin.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-nicolas.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-devs.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-tara.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-justin.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-nicolas.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-tara.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-justin.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-nicolas.jpg">
+          </div>
+          <div class="credits-box">
+            <img src="images/LORIS-team-tara.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-justin.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-nicolas.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-tara.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-justin.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-nicolas.jpg">
+          </div>
+          <div class="credits-box">
+            <img src="images/LORIS-team-rest.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-justin.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-nicolas.jpg">
+          </div> 
+          <div class="credits-box">
+            <img src="images/LORIS-team-tara.jpg">
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+<!--<section id="credits">
+      <div class="parallax-two">
+        <div class="content">
+          <h1>LORIS Development Team</h1>
+          
+          <h2>Lead Developers</h2>
+          <ul class="credits">
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+          </ul>
+
+          <h2>Development Team</h2>
+          <ul class="credits">
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+          </ul>
+
+          <h2>Additional Support</h2>
+          <ul class="credits">
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+            <li>Firstname Lastname</li>
+          </ul>
+
+        </div>
+      </div>
+    </section>-->
+
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Wiki</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <h3>Partners </h3>
+       <div class="clear"></div>
+       <img src="images/logo-mcgill.png">
+       <img src="images/logo-neuro.png">
+       <img src="images/logo-mcin.png">
+       <img src="images/logo-ludmer.png">
+    </footer>
+
+    <a href="#to-top" class="ease"><div class="top-button">TOP</div></a> 
+
+<!-- slicknav script -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#menu').slicknav({label:''});
+  });
+</script>
+ </body>
+ <html>

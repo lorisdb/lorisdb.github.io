@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LORIS | Home Page</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="LORIS is">
+  <meta name="author" content="Derek Lo 2015">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400italic,100,300,400,500' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css">
+<![endif]-->
+<link rel="stylesheet" href="css/slicknav.css">
+<link href="css/common_styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+
+<!-- jquery easing script -->
+
+<script>
+$( document ).ready( function() {
+  $('a.ease').bind('click',function(event){
+    var $anchor = $(this);
+
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1250,'easeInOutExpo');
+    event.preventDefault();
+  });
+});
+</script>
+
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="top">
+      <div class="logodiv">
+        <img src="images/LORIS-logo-color.png" alt=""/>
+      </div>
+      <nav>
+        <ul id="main-nav">
+          <li><a href="index.html" class="first">Home</a></li>
+          <li><a href="features.html" class="">Features</a></li>
+          <li><a href="getstarted.html" class="">Get Started</a></li>
+          <li><a href="support.html" class="active">Support</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+
+        <!-- slicknav -->
+        <div id="menu">
+            <ul>
+              <li><a href="index.html" class="menu-fx">Home</a></li>
+              <li><a href="features.html" class="menu-fx">Features</a></li>
+              <li><a href="getstarted.html" class="menu-fx">Get Started</a></li>
+              <li><a href="support.html" class="menu-fx active">Support</a></li>
+              <li><a href="contact.html" class="menu-fx">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="to-top">
+      <div class="parallax-six">
+        <div class="content">
+          <h1 class="center">Support</h1>
+          <div class="feature-p">
+            <h2>FAQ</h2>
+            <ol class="bottom-margin">
+              <li>What is LORIS used for?</li>
+              <li>How easily can I import data from another data source into LORIS?</li>
+              <li>How easily can I export data from LORIS to other software/my analysis tools?</li>
+              <li>How is LORIS licensed? Is it open source?</li>
+              <li>What imaging data formats can LORIS handle?</li>
+              <li>Can I have custom scoring for clinical/neuropsychological measures?</li>
+              <li>How much coding is required for clinical/neuropsychological measures?</li>
+              <li>How fast can LORIS query and extract data for download from large datasets?</li>
+              <li>How is data validated in LORIS?</li>
+            </ol>
+
+            <p><strong>1. What is LORIS used for?</strong><p>
+            <p>LORIS is a flexible platform for project design and collection, management, dissemination, synthesis, and correlation of data across different modalities (imaging, behavioural, genetic)</p>
+
+            <p><strong>2. How easily can I import data from another data source into LORIS?</strong><p>
+            <p>LORIS can import data via Excel or CSV uploaders, as well as linking to other data repositories via custom pipelines.</p>
+
+            <p><strong>3. How easily can I export data from LORIS to other software/my analysis tools?</strong></p>
+            <p>Data is queried and downloaded via the Data Querying Tool. Hooks exist to send this data to processing and analysis pipelines.</p>
+
+            <p><strong>4. How is LORIS licensed? Is it open source?</strong></p>
+            <p>LORIS is open source.</p>
+
+            <p><strong>5. What imaging data formats can LORIS handle?</strong></p>
+            <p>LORIS is designed to process Minc, nifti, MEG, freesurfer, and processed input data, and can be customized for other modalities via fully configurable pipeline and visualization tools. Raw dicoms are the foundation of the core visualization utilities. Conversion to formats such as minc and nifti can be easily embedded in LORIS data handling pipelines.</p>
+
+            <p><strong>6. Can I have custom scoring for clinical/neuropsychological measures?</strong></p>
+            <p>Yes. Custom scoring can be implemented by script, in a variety of languages including PHP, Python or Matlab.</p>
+
+            <p><strong>7. How much coding is required for clinical/neuropsychological measures?</strong></p>
+            <p>LORIS’ Instrument Builder module enables non-technical staff to create many simple forms. Scoring and field dependencies can be implemented in a wide variety of scripting languages.</p>
+
+            <p><strong>8. How fast can LORIS query and extract data for download from large datasets?</strong></p>
+            <p>LORIS’ couchDB-based Data Querying Tool outperforms traditional MySQL-based cached retrieval by a factor of 4 for data querying and extraction. (Based on a medium-sized study with 7500 instrument datasets.)</p>
+
+            <p><strong>9. How is data validated in LORIS?</strong></p>
+            <p>LORIS has many Quality Control features enabling study staff to review, flag and track data quality at every level. Additional features in the Statistics module provide at-a-glance outlier identification.</p>
+          </div>
+        </div>
+      <div class="clear"></div>
+    </section>
+
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Wiki</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <h3>Partners </h3>
+       <div class="clear"></div>
+       <img src="images/logo-mcgill.png">
+       <img src="images/logo-neuro.png">
+       <img src="images/logo-mcin.png">
+       <img src="images/logo-ludmer.png">
+    </footer>
+
+    <a href="#to-top" class="ease"><div class="top-button">TOP</div></a>
+
+<!-- slicknav script -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#menu').slicknav({label:''});
+  });
+</script>
+ </body>
+ <html>

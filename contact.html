@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LORIS | Home Page</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="LORIS is">
+  <meta name="author" content="Derek Lo 2015">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400italic,100,300,400,500' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css">
+<![endif]-->
+<link rel="stylesheet" href="css/slicknav.css">
+<link href="css/common_styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+
+<!-- jquery easing script -->
+
+<script>
+$( document ).ready( function() {
+  $('a.ease').bind('click',function(event){
+    var $anchor = $(this);
+
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1250,'easeInOutExpo');
+    event.preventDefault();
+  });
+});
+</script>
+
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="top">
+      <div class="logodiv">
+        <img src="images/LORIS-logo-color.png" alt=""/>
+      </div>
+      <nav>
+        <ul id="main-nav">
+          <li><a href="index.html" class="first">Home</a></li>
+          <li><a href="features.html" class="">Features</a></li>
+          <li><a href="getstarted.html" class="">Get Started</a></li>
+          <li><a href="faq.html" class="">FAQ</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+        <!-- slicknav -->
+        <div id="menu">
+            <ul>
+              <li><a href="index.html" class="menu-fx">Home</a></li>
+              <li><a href="features.html" class="menu-fx">Features</a></li>
+              <li><a href="getstarted.html" class="menu-fx">Get Started</a></li>
+              <li><a href="faq.html" class="menu-fx ">FAQ</a></li>
+              <li><a href="contact.html" class="menu-fx active">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="to-top">
+      <div class="parallax-seven">
+        <div class="content">
+          <h1 class="center">Contact</h1>
+          <div class="form-holder">
+            <div class="form-left">
+              <form method="post" action="contact.php">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Name" required>
+
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email" required>
+                
+                <label>Your Message</label>
+                <textarea rows="18" name="message" type="text" placeholder="Message" required></textarea>
+
+                <button id="submit" name="submit" type="submit" value="submit">Send</button>
+              </form>
+            </div>
+            <div class="form-right">
+
+              <div class="textbox">
+                <div class="textbox-left">
+                  <i class="fa fa-exclamation-triangle center textbox-icon"></i>
+                </div>
+                <div class="textbox-right">
+                  <p>Use our Issue Tracker to report bugs and to suggest new features or improvements.</p>
+                  <p>Please review our Reporting Guidelines before adding a new issue.</p>
+                </div>
+              </div>
+
+              <div class="textbox">
+                <div class="textbox-left">
+                  <i class="fa fa-envelope-square center textbox-icon"></i>
+                </div>
+                <div class="textbox-right">
+                  <p>Join the Mailing List and get in touch with LORIS developers and receive updates about code changes and new releases.</p>
+                  </div>
+              </div>
+
+              <div class="textbox">
+                <div class="textbox-left">
+                  <i class="fa fa-map-marker center textbox-icon"></i>
+                </div>
+                <div class="textbox-right">
+                  <p>Join the Mailing List and get in touch with LORIS developers and receive updates about code changes and new releases.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="clear"></div>
+    </section>
+
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Wiki</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <h3>Partners </h3>
+       <div class="clear"></div>
+       <img src="images/logo-mcgill.png">
+       <img src="images/logo-neuro.png">
+       <img src="images/logo-mcin.png">
+       <img src="images/logo-ludmer.png">
+    </footer>
+
+    <a href="#to-top" class="ease"><div class="top-button">TOP</div></a>
+
+<!-- slicknav script -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#menu').slicknav({label:''});
+  });
+</script>
+ </body>
+ <html>

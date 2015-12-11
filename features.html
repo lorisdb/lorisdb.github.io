@@ -1,0 +1,418 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LORIS | Home Page</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="LORIS is">
+  <meta name="author" content="Derek Lo 2015">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400italic,100,300,400,500' rel='stylesheet' type='text/css'>
+<!--[if IE]>
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet" type="text/css">
+<![endif]-->
+<link rel="stylesheet" href="css/slicknav.css">
+<link href="css/common_styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+
+<!-- jquery easing script -->
+
+<script>
+$( document ).ready( function() {
+  $('a.ease').bind('click',function(event){
+    var $anchor = $(this);
+
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1250,'easeInOutExpo');
+    event.preventDefault();
+  });
+});
+</script>
+
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="top">
+      <div class="logodiv">
+        <img src="images/LORIS-logo-color.png" alt=""/>
+      </div>
+      <nav>
+        <ul id="main-nav">
+          <li><a href="index.html" class="first">Home</a></li>
+          <li><a href="features.html" class="active">Features</a></li>
+          <li><a href="getstarted.html" class="">Get Started</a></li>
+          <li><a href="faq.html" class="">FAQ</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+
+        <!-- slicknav -->
+        <div id="menu">
+            <ul>
+              <li><a href="index.html" class="menu-fx">Home</a></li>
+              <li><a href="features.html" class="menu-fx active">Features</a></li>
+              <li><a href="getstarted.html" class="menu-fx">Get Started</a></li>
+              <li><a href="faq.html" class="menu-fx">FAQ</a></li>
+              <li><a href="contact.html" class="menu-fx">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="to-top">
+      <div class="parallax-three">
+        <div class="content">
+          <h1 class="center"> Features</h1>
+
+          <p class="bottom-margin"> LORIS comes complete with a flexible toolset to manage, process, and disseminate large amounts of data for a variety of study scenarios. Some of the main features include:</p>
+          
+          <div class="holder-big">
+            <div class="holder-half">
+              <div class="two-column">
+                <a href="#data-collection" class="ease">
+                  <div class="blue-content special">
+                  <img src="images/icon-data.png">
+                  <h3>Data Collection</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>During data entry, strict completion rules, restricted field types and rule checking actively enforce data validity according to project standards. <a href="#data-colleciton">[read more]</a></p>
+                </div>
+              </div>
+              
+              <div class="two-column">
+                <a href="#data-management" class="ease">
+                  <div class="blue-content special">
+                    <img src="images/icon-data-management.png">
+                    <h3>Data Management</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>LORIS features an easy to use interface to enter clinical data. Datasets are validated and cleaned of identifying information. <a href="#data-management">[read more]</a></p>    
+                </div>
+              </div>
+            </div>
+
+            <div class="holder-half">
+              <div class="two-column">
+                <a href="#quality-control" class="ease">
+                  <div class="blue-content special">
+                    <img src="images/icon-quality.png">
+                    <h3>Quality Control</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>During data entry, strict completion rules, restricted field types and rule checking actively enforce data validity according to project standards. <a href="#quality-control">[read more]</a></p>
+                </div>
+              </div>
+              
+              <div class="two-column">
+                <a href="#data-imaging" class="ease">
+                  <div class="blue-content special">
+                    <img src="images/icon-imaging.png">
+                    <h3>Data Imaging</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>LORIS features an easy to use interface to enter clinical data. Datasets are validated and cleaned of identifying information. <a href="#data-imaging">[read more]</a></p>    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="holder-big">
+            <div class="holder-half">
+              <div class="two-column">
+                <a href="#visualization" class="ease">
+                  <div class="blue-content special">
+                    <img src="images/icon-visualization.png">
+                    <h3>Visualization</h3>
+                  </div>
+                </a>
+                
+                <div class="clear-content">
+                  <p>During data entry, strict completion rules, restricted field types and rule checking actively enforce data validity according to project standards. <a href="#visualization">[read more]</a></p>
+                </div>
+              </div>
+              
+              <div class="two-column">
+                <a href="#data-dissemination" class="ease">
+                  <div class="blue-content special">
+                    <img src="images/icon-data-dissemination.png">
+                    <h3>Data Dissemination</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>LORIS features an easy to use interface to enter clinical data. Datasets are validated and cleaned of identifying information. <a href="#data-dissemination">[read more]</a></p>    
+                </div>
+              </div>
+            </div>
+
+            <div class="holder-half">
+              <div class="two-column">
+                <a href="#customization" class="ease">
+                  <div class="blue-content special">
+                    <img src="images/icon-customization.png">
+                  <h3>Customization</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>During data entry, strict completion rules, restricted field types and rule checking actively enforce data validity according to project standards. <a href="#customization">[read more]</a></p>
+                </div>
+              </div>
+              
+              <div class="two-column">
+                <a href="#responsive" class="ease">
+                  <div class="blue-content special">
+                    <img src="images/icon-responsive.png">
+                  <h3>Responsive</h3>
+                  </div>
+                </a>
+                <div class="clear-content">
+                  <p>LORIS features an easy to use interface to enter clinical data. Datasets are validated and cleaned of identifying information. <a href="#responsive">[read more]</a></p>    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+    </section>
+
+    <section id="data-collection">
+      <div class="feature-section grey">
+        <div class="feature-text-left">
+          <h2>Data Collection</h2>
+          <p>LORIS allows you to enter a variety of data from different sources. With a variety of options for entry, identification, and classification, LORIS allows you to customize your data to suite the parameters of your study. Some examples of data that can be entered are:</p>
+          <ul>
+            <li>
+              <h3>Behavioural Data</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Imaging Data</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Genetic Data</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Biosamples</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-right">
+          <img src="images/LORIS-home-screen.png">
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+    <section>
+      <div class="feature-section white" id="data-management">
+        <h2 class="center ">Data Management</h2>
+        <p class="feature-p fix">Loris makes it easy to manage large amounts of data. With a variety of customizable fields for organization and sorting, Loris can help you access the information you need when you need it.</p>
+        <div class="feature-image-center">
+          <img src="images/LORIS-home-screen.png">
+        </div>   
+        <div class="clear"></div>
+    </section>
+ 
+
+    <section>
+      <div class="feature-section blue" id="quality-control">
+        <div class="feature-text-left">
+          <h2>Quality Control</h2>
+          <p>LORIS allows you to enter a variety of data from different sources. With a variety of options for entry, identification, and classification, LORIS allows you to customize your data to suite the parameters of your study. Some examples of data that can be entered are:</p>
+          <ul>
+            <li>
+              <h3>Double Data Entry and Conflict Resolver</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Imaging Feedback</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Radiological Reviews</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Outlier Detection</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-right">
+          <img src="images/LORIS-home-screen.png">
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+    <section>
+      <div class="feature-section white" id="data-imaging">
+        <div class="feature-text-right">
+          <h2>Data Imaging</h2>
+          <p>LORIS allows you to enter a variety of data from different sources. With a variety of options for entry, identification, and classification, LORIS allows you to customize your data to suite the parameters of your study. Some examples of data that can be entered are:</p>
+          <ul>
+            <li>
+              <h3>MRI Uploading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Imaging Pre-Processing</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Multi-Modal</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Brain Browsing</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-left">
+          <img src="images/LORIS-home-screen.png">
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+    <section>
+      <div class="feature-section teal" id="visualization">
+        <div class="feature-text-left">
+          <h2>Visualization</h2>
+          <p>LORIS allows you to enter a variety of data from different sources. With a variety of options for entry, identification, and classification, LORIS allows you to customize your data to suite the parameters of your study. Some examples of data that can be entered are:</p>
+          <ul>
+            <li>
+              <h3>Customer Dashboard</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Study Statistics</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Brain Browsing</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-right">
+          <img src="images/LORIS-home-screen.png">
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+    <section>
+      <div class="feature-section white" id="data-dissemination">
+        <div class="feature-text-right">
+          <h2>Data Dissemination</h2>
+          <p>LORIS allows you to enter a variety of data from different sources. With a variety of options for entry, identification, and classification, LORIS allows you to customize your data to suite the parameters of your study. Some examples of data that can be entered are:</p>
+          <ul>
+            <li>
+              <h3>Data Query Tool</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>File Downloading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Data Permissions</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>User Permissions</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-left">
+          <img src="images/LORIS-home-screen.png">
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+    <section>
+      <div class="feature-section grey" id="customization">
+        <div class="feature-text-left">
+          <h2>Customization</h2>
+          <p>LORIS allows you to enter a variety of data from different sources. With a variety of options for entry, identification, and classification, LORIS allows you to customize your data to suite the parameters of your study. Some examples of data that can be entered are:</p>
+          <ul>
+            <li>
+              <h3>Configuration Module</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Easily Add/Remove Modules</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Multi-Purpose</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+            <li>
+              <h3>Open Source</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis felis nec mollis consectetur. Duis nisi dui, malesuada a ipsum a, laoreet pharetra lacus. </p>
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-right">
+          <img src="images/LORIS-home-screen.png">
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+    <section id="responsive">
+      <div class="parallax-four">
+        <h2 class="center">Responsive</h2>
+        <p class="feature-p fix">LORIS is designed to respond to the screen size of your device. With the ability to customize the GUI as well as create your own custom CSS file, LORIS can be optimized to work on almost any device.</p>
+        <img src="images/LORIS-home-screen.png" class="responsive-big">
+        <img src="images/LORIS-tablet-screen.png" class="responsive-med">
+        <img src="images/LORIS-phone-screen.png" class="responsive-small">
+        <div class="clear"></div>
+    </section>
+
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Wiki</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <h3>Partners </h3>
+       <div class="clear"></div>
+       <img src="images/logo-mcgill.png">
+       <img src="images/logo-neuro.png">
+       <img src="images/logo-mcin.png">
+       <img src="images/logo-ludmer.png">
+    </footer>
+
+    <a href="#to-top" class="ease"><div class="top-button">TOP</div></a>
+
+<!-- slicknav script -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#menu').slicknav({label:''});
+  });
+</script>
+ </body>
+ <html>
