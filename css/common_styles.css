@@ -234,6 +234,14 @@ header {
 	left: 0;
 	z-index: 10000;
 	border-bottom: 1px solid #f47c20;
+	-webkit-transition-duration: .25s;
+	-moz-transition-duration: .25s;
+	-ms-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	transition-duration: .25s;
+}
+.mini {
+	height:70px;
 }
 nav {
 	height:100%;
@@ -323,6 +331,7 @@ nav ul li.first {
 	width: auto;
 }
 
+
 /* Section - Columns */
 /**************************/
 /*different column layouts inside sections*/
@@ -407,7 +416,9 @@ nav ul li.first {
 .grey {
 	background: #797979;
 }
-
+.grey ol {
+	color: #fff;
+}
 .blue {
 	background: #1992be;
 	overflow: auto;
@@ -595,14 +606,26 @@ nav ul li.first {
 }
 .credits-text {
 	width: 100%;
-	height: 100%;
-	display: table-cell;
-	text-align: center;
+	text-align: left;
 	vertical-align: middle;
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
+	z-index: 1000;
+	color: #fff;
 }
+.credits-text h2 {
+	text-align: left !important;
+	padding: 0 10px;
+	margin-bottom: .5em;
+	opacity: .6;
+}
+.credits-text h3 {
+	margin-bottom: 0.5em;
+	padding: 0 10px;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);	
+}
+
 
 /* Section - form styles */
 /**************************/
@@ -834,7 +857,12 @@ label, input, textarea {
 	padding-left: 0;
 	padding-right: 0;
 }
-
+.credits-text h2 {
+	font-size: 1em !important;
+}
+.credits-text h3 {
+	font-size: 1em !important;
+}
 }
 
 @media screen and (max-width: 550px) {
@@ -903,5 +931,11 @@ label, input, textarea {
 }
 .credits-box {
 	width: 33.33%;
+}
+.credits-text h2 {
+	font-size: .875em !important;
+}
+.credits-text h3 {
+	font-size: .875em !important;
 }
 }

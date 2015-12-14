@@ -96,8 +96,8 @@ $( document ).ready( function() {
                   <i class="fa fa-exclamation-triangle center textbox-icon"></i>
                 </div>
                 <div class="textbox-right">
-                  <p>Use our Issue Tracker to report bugs and to suggest new features or improvements.</p>
-                  <p>Please review our Reporting Guidelines before adding a new issue.</p>
+                  <p>For additional information, please visit the official <a href="https://github.com/aces/Loris/wiki" class="underline" target="_blank">LORIS site on github</a>.</p>
+                  <p>If you'd like to report an issue, please visit the <a href="https://github.com/aces/Loris/issues" class="underline" target="_blank">LORIS issue submission page</a>.</p>
                 </div>
               </div>
 
@@ -106,7 +106,7 @@ $( document ).ready( function() {
                   <i class="fa fa-envelope-square center textbox-icon"></i>
                 </div>
                 <div class="textbox-right">
-                  <p>Join the Mailing List and get in touch with LORIS developers and receive updates about code changes and new releases.</p>
+                  <p>Join the <a href="https://github.com/aces/Loris/wiki/Community" class="underline" target="_blank">LORIS community</a> for up-to-date user and development news.</p>
                   </div>
               </div>
 
@@ -115,7 +115,10 @@ $( document ).ready( function() {
                   <i class="fa fa-map-marker center textbox-icon"></i>
                 </div>
                 <div class="textbox-right">
-                  <p>Join the Mailing List and get in touch with LORIS developers and receive updates about code changes and new releases.</p>
+                  <p>The LORIS team can be reached at:</p>
+                  <p>527, avenue des Pins Ouest<br>
+                    Montréal, QC H2W 1S4<br>
+                    Canada</p>
                   </div>
               </div>
             </div>
@@ -146,6 +149,15 @@ $( document ).ready( function() {
   $(document).ready(function(){
     $('#menu').slicknav({label:''});
   });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('#top').addClass("mini");
+    }
+    else{
+        $('#top').removeClass("mini");
+    }
+});
 </script>
  </body>
  <html>

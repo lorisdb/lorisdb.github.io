@@ -141,6 +141,15 @@ $( document ).ready( function() {
   $(document).ready(function(){
     $('#menu').slicknav({label:''});
   });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('#top').addClass("mini");
+    }
+    else{
+        $('#top').removeClass("mini");
+    }
+});
 </script>
  </body>
  <html>
