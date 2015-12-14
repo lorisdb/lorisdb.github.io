@@ -291,7 +291,7 @@ nav ul li.first {
   z-index: 20000;
   background: none;
   position: fixed;
-  top:55px;
+  top:10px;
   right:0;
   width:175px;
   text-align: left;
