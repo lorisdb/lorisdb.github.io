@@ -291,6 +291,36 @@ makeMarker({
 
 var contentString = 
       '<div>'+
+      '<img src="http://ccna-ccnv.ca/wp-content/uploads/2015/06/CCNA_title1.png" class="logo">'+
+      '<h1>The CCNA</h1>'+
+      '<p><b>The Canadian Consortium on Neurodegeneration in Aging (CCNA)</b> provides the infrastructure and support that facilitates collaboration amongst Canada’s top dementia researchers. By accelerating the discovery, innovation, and the adoption of new knowledge, the CCNA positions Canada as a global leader in increasing understanding of neurodegenerative diseases, working towards prevention, and improving the quality of life of those living with dementia.</p>'+
+      '<p>Website: <a href="http://ccna-ccnv.ca/en/" target="blank">ccna-ccnv.ca</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(45.420477, -75.701056),
+  title: "Canadian Consortium on Neurodegeneration in Aging",
+  sidebarItem: "Canadian Consortium on Neurodegeneration in Aging",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.fz-juelich.de/SiteGlobals/StyleBundles/Bilder/NeuesLayout/logo.gif;jsessionid=2A49E35ECA31A04A76B23FC867C83FE2?__blob=normal" class="logo">'+
+      '<h1>BigBrain Project</h1>'+
+      '<p><b>The BigBrain Project</b> is a 3D model of a human brain in extremely high resolution. This reconstruction is a free tool, and offers matchless neuroanatomical insight as well as the possibility to verify hypotheses.</p>'+
+      '<p>Website: <a href="http://www.fz-juelich.de/inm/inm-1/EN/Forschung/_docs/BigBrain/bigbrain_node.html" target="blank">http://www.fz-juelich.de/</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(50.922477, 6.361087),
+  title: "BigBrain Project",
+  sidebarItem: "BigBrain Project",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
       '<img src="http://www.sickkids.ca/resources/hospital/images/logos/sickkids.gif" class="logo">'+
       '<h1>Sick Kids Hospital</h1>'+
       '<p><b>Sick Kids</b> is located in Toronto Canada.</p>'+
@@ -315,6 +345,51 @@ makeMarker({
   position: new google.maps.LatLng(44.225572, -76.495506),
   title: "Queens University",
   sidebarItem: "Queens University",
+  content: contentString,
+  icon: image
+});  
+
+var contentString = 
+      '<div>'+
+      '<img src="" class="logo">'+
+      '<h1>IBIS Seattle</h1>'+
+      '<p><b>IBIS</b> (Intraoperative Brain Imaging System) is an Image-Guided Neurosurgery software platform. It is meant to replicate the basic functionality of commercial image-guided systems such as Medtronic’s StealthStation while offering researchers an open system in which they can incorporate cutting-edge research modules for validation.</p>'+
+      '<p>Website: <a href="http://www.bic.mni.mcgill.ca/ServicesSoftwareVisualization/IBIS" target="blank">IBIS</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(47.599949, -122.339345),
+  title: "IBIS Seattle",
+  sidebarItem: "IBIS Seattle",
+  content: contentString,
+  icon: image
+});
+
+var contentString = 
+      '<div>'+
+      '<img src="" class="logo">'+
+      '<h1>IBIS St Louis</h1>'+
+      '<p><b>IBIS</b> (Intraoperative Brain Imaging System) is an Image-Guided Neurosurgery software platform. It is meant to replicate the basic functionality of commercial image-guided systems such as Medtronic’s StealthStation while offering researchers an open system in which they can incorporate cutting-edge research modules for validation.</p>'+
+      '<p>Website: <a href="http://www.bic.mni.mcgill.ca/ServicesSoftwareVisualization/IBIS" target="blank">IBIS</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(38.621167, -90.192309),
+  title: "IBIS St Louis",
+  sidebarItem: "IBIS St Louis",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="" class="logo">'+
+      '<h1>IBIS North Carolina</h1>'+
+      '<p><b>IBIS</b> (Intraoperative Brain Imaging System) is an Image-Guided Neurosurgery software platform. It is meant to replicate the basic functionality of commercial image-guided systems such as Medtronic’s StealthStation while offering researchers an open system in which they can incorporate cutting-edge research modules for validation.</p>'+
+      '<p>Website: <a href="http://www.bic.mni.mcgill.ca/ServicesSoftwareVisualization/IBIS" target="blank">IBIS</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(35.230349, -80.834388),
+  title: "IBIS North Carolina",
+  sidebarItem: "IBIS North Carolina",
   content: contentString,
   icon: image
 });  
