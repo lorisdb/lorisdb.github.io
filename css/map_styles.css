@@ -126,7 +126,7 @@ body, html {
 	height:80%;
 	width:20%;
 	max-height:1024px;
-	margin: 0 0 50px 0;
+	margin: 0 ;
 	overflow: auto;
 	background-color: #797979; 
 }
@@ -182,9 +182,8 @@ body, html {
 #map-holder {
 	height: 100%;
 	width: 100%;
-	min-height: 50%;
 	margin: 0;
-	padding: 0 15px;
+	padding: 0 30px;
 }
 #map-holder #map {
 	width: 100%;
@@ -195,7 +194,7 @@ body, html {
 	height: auto;
 }
 #map-holder button {
-	width: 33.33% !important;
+	width: 50% !important;
 	min-height: 65px;
 	float: left;
 }
