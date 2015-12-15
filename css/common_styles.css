@@ -574,6 +574,7 @@ nav ul li.first {
 	display: block;
 	width: 100%;
 	overflow: auto;
+	background: #000;
 }
 .credits {
 	display: block;
@@ -591,6 +592,9 @@ nav ul li.first {
 	display: block;
 	width: 100%;
 	text-align: center;
+	margin-bottom: 100px;
+	color: #fff;
+	font-size: 2.5em !important;
 }
 .credits-box {
 	display: block;
@@ -792,6 +796,11 @@ footer img:hover {
 
 /* Media Queries */
 /**************************/
+@media screen and (max-width: 1070px)  {
+.credits h2 {
+	font-size: 1.1em !important;
+}
+}
 
 @media screen and (max-width: 959px)  {
 .holder-half {
