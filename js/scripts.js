@@ -229,8 +229,15 @@ SidebarItem.prototype.remove = function(){
 * the pins on the map. 
 * Any icon can be used by changing the source. 
 * If left blank, it will use the default google maps pins.
+* var image = '';
 */
-var image = 'http://mcin-cnim.ca/wp-content/uploads/2015/11/mini-db.png';
+
+/* 
+* this is an icon of a db
+*/
+var image = 'mini-db.png';
+
+
 
 /*
 * this variable sets the 
@@ -306,6 +313,36 @@ makeMarker({
 
 var contentString = 
       '<div>'+
+      '<img src="http://www.cima-q.ca/ressources/images/logocimaq.png" class="logo">'+
+      '<h1>CIMA-Q</h1>'+
+      "<p><b>TConsortium pour l'Identification précoce de la Maladie d'Alzheimer (CMA-Q)</b> regroupe plus de 90 chercheurs et cliniciens québécois qui ont comme objectif commun de faire avancer les connaissances sur la maladie d'Alzheimer. </p>"+
+      '<p>Website: <a href="http://www.cima-q.ca/" target="blank">www.cima-q.ca</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(45.491389, -73.623308),
+  title: "Consortium pour l'Identification précoce de la Maladie d'Alzheimer",
+  sidebarItem: "CIMA-Q",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://rpq-qpn.ca/en/wp-content/uploads/2014/05/Logo-Quebec-Parkinson-Network.png" class="logo">'+
+      '<h1>Quebec Parkinson Network</h1>'+
+      "<p><b>Quebec Parkinson Network</b> allows researchers, clinicians and patients to regroup. Promoting collaboration of different actors in the fight against Parkinson's disease, the Network wants to be the new leader of the research on the disease.</p>"+
+      '<p>Website: <a href="http://rpq-qpn.ca/en/" target="blank">rpq-qpn.ca</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(45.509167, -73.581361),
+  title: "Quebec Parkinson Network",
+  sidebarItem: "Quebec Parkinson Network",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
       '<img src="http://www.fz-juelich.de/SiteGlobals/StyleBundles/Bilder/NeuesLayout/logo.gif;jsessionid=2A49E35ECA31A04A76B23FC867C83FE2?__blob=normal" class="logo">'+
       '<h1>BigBrain Project</h1>'+
       '<p><b>The BigBrain Project</b> is a 3D model of a human brain in extremely high resolution. This reconstruction is a free tool, and offers matchless neuroanatomical insight as well as the possibility to verify hypotheses.</p>'+
@@ -345,6 +382,36 @@ makeMarker({
   position: new google.maps.LatLng(44.225572, -76.495506),
   title: "Queens University",
   sidebarItem: "Queens University",
+  content: contentString,
+  icon: image
+});  
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.neurodevnet.ca/sites/all/themes/NeuroDevNet2010/images/neurodevnet-logo.jpg" class="logo">'+
+      '<h1>NeuroDevNet</h1>'+
+      '<p><b>NeuroDevNet</b>, a Canadian Network of Centres of Excellence (NCE), is dedicated to understanding brain development and to helping children and their families overcome the challenges of neurodevelopmental disorders.</p>'+
+      '<p>Website: <a href="http://www.neurodevnet.ca/" target="blank">www.neurodevnet.ca</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(49.246448, -123.127554),
+  title: "NeuroDevNet",
+  sidebarItem: "NeuroDevNet",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://adni.loni.usc.edu/wp-content/themes/freshnews-dev-v2/images/logo-adni.png" class="logo">'+
+      '<h1>Alzheimer’s Disease Neuroimaging Initiative </h1>'+
+      '<p><b>Alzheimer’s Disease Neuroimaging Initiative</b> unites researchers with study data as they work to define the progression of Alzheimer’s disease. ADNI researchers collect, validate and utilize data such as MRI and PET images, genetics, cognitive tests, CSF and blood biomarkers as predictors for the disease..</p>'+
+      '<p>Website: <a href="http://adni.loni.usc.edu/" target="blank">adni.loni.usc.edu</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(32.749280, -116.496770),
+  title: "Alzheimer’s Disease Neuroimaging Initiative ",
+  sidebarItem: "Alzheimer’s Disease Neuroimaging Initiative ",
   content: contentString,
   icon: image
 });  
@@ -420,6 +487,21 @@ makeMarker({
   position: new google.maps.LatLng(46.226888, 6.148227),
   title: "Human Brain Project",
   sidebarItem: "Human Brain Project",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://fcon_1000.projects.nitrc.org/indi/abide/abide_logo2.jpg" class="logo">'+
+      '<h1>ABIDE</h1>'+
+      '<p><b>The Autism Brain Imaging Data Exchange (ABIDE)</b> provides previously collected resting state functional magnetic resonance imaging (R-fMRI) datasets from 539 individuals with ASD and 573 typical controls for the purpose of data sharing in the broader scientific community. </p>'+
+      '<p>Website: <a href="http://fcon_1000.projects.nitrc.org/indi/abide/" target="blank">ABIDE website</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(52.456693, -1.952059),
+  title: "Autism Brain Imaging Data Exchange",
+  sidebarItem: "Autism Brain Imaging Data Exchange",
   content: contentString,
   icon: image
 }); 
