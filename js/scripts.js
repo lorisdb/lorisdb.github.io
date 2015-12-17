@@ -218,7 +218,6 @@ SidebarItem.prototype.remove = function(){
 
 
 
-
 /**
  * markers and info window contents
  * copy/paste entries to create new ones
@@ -274,8 +273,8 @@ var contentString =
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(45.5089835, -73.5813425),
-  title: "Neuro",
-  sidebarItem: "Neuro",
+  title: "Montreal Neuro",
+  sidebarItem: "Montreal Neuro",
   content: contentString,
   icon: image
 });   
@@ -290,7 +289,7 @@ var contentString =
 makeMarker({
   position: new google.maps.LatLng(45.442508, -73.584851),
   title: "Douglas Mental Health University Institute",
-  sidebarItem: "Douglas Mental Health",
+  sidebarItem: "Douglas Hospital",
   content: contentString,
   icon: image
 }); 
@@ -304,8 +303,8 @@ var contentString =
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(45.420477, -75.701056),
-  title: "Canadian Consortium on Neurodegeneration in Aging",
-  sidebarItem: "Canadian Consortium on Neurodegeneration in Aging",
+  title: "Canadian Consortium on Neurodegeneration in Aging (CCNA)",
+  sidebarItem: "Canadian Consortium on Neurodegeneration in Aging (CCNA)",
   content: contentString,
   icon: image
 }); 
@@ -314,7 +313,7 @@ var contentString =
       '<div>'+
       '<img src="http://www.cima-q.ca/ressources/images/logocimaq.png" class="logo">'+
       '<h1>CIMA-Q</h1>'+
-      "<p><b>TConsortium pour l'Identification précoce de la Maladie d'Alzheimer (CMA-Q)</b> regroupe plus de 90 chercheurs et cliniciens québécois qui ont comme objectif commun de faire avancer les connaissances sur la maladie d'Alzheimer. </p>"+
+      "<p><b>Consortium pour l'Identification précoce de la Maladie d'Alzheimer (CMA-Q)</b> regroupe plus de 90 chercheurs et cliniciens québécois qui ont comme objectif commun de faire avancer les connaissances sur la maladie d'Alzheimer. </p>"+
       '<p>Website: <a href="http://www.cima-q.ca/" target="blank">www.cima-q.ca</a></p>'+
       '</div>';
 makeMarker({
@@ -373,14 +372,14 @@ makeMarker({
 var contentString = 
       '<div>'+
       '<img src="http://www.queensu.ca/sites/all/themes/queensbase_omega/images/wordmark.png" class="logo">'+
-      '<h1>Queens University</h1>'+
-      '<p><b>Queens University</b> is located in Kingston Canada.</p>'+
+      "<h1>Queens's University</h1>"+
+      "<p><b>Queen's University</b> is located in Kingston Canada.</p>"+
       '<p>Website: <a href="http://queensu.ca/" target="blank">queensu.ca</a></p>'+
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(44.225572, -76.495506),
-  title: "Queens University",
-  sidebarItem: "Queens University",
+  title: "Queen's University",
+  sidebarItem: "Queen's University",
   content: contentString,
   icon: image
 });  
@@ -409,18 +408,18 @@ var contentString =
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(32.749280, -116.496770),
-  title: "Alzheimer’s Disease Neuroimaging Initiative ",
-  sidebarItem: "Alzheimer’s Disease Neuroimaging Initiative ",
+  title: "ADNI",
+  sidebarItem: "ADNI",
   content: contentString,
   icon: image
 });  
 
 var contentString = 
       '<div>'+
-      '<img src="" class="logo">'+
+      '<img src="http://www.ibis-network.org/Images/TitleBarNavigateSM-ACE.gif" class="logo">'+
       '<h1>IBIS Seattle</h1>'+
-      '<p><b>IBIS</b> (Intraoperative Brain Imaging System) is an Image-Guided Neurosurgery software platform. It is meant to replicate the basic functionality of commercial image-guided systems such as Medtronic’s StealthStation while offering researchers an open system in which they can incorporate cutting-edge research modules for validation.</p>'+
-      '<p>Website: <a href="http://www.bic.mni.mcgill.ca/ServicesSoftwareVisualization/IBIS" target="blank">IBIS</a></p>'+
+      '<p><b>Infant Brain Imaging Study (IBIS)</b> is a project to increase our understanding of the timing and pattern of brain development in very young children with autism. </p>'+
+      '<p>Website: <a href="http://www.ibis-network.org/" target="blank">ibis-network.org</a></p>'+
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(47.599949, -122.339345),
@@ -432,10 +431,10 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="" class="logo">'+
+      '<img src="http://www.ibis-network.org/Images/TitleBarNavigateSM-ACE.gif" class="logo">'+
       '<h1>IBIS St Louis</h1>'+
-      '<p><b>IBIS</b> (Intraoperative Brain Imaging System) is an Image-Guided Neurosurgery software platform. It is meant to replicate the basic functionality of commercial image-guided systems such as Medtronic’s StealthStation while offering researchers an open system in which they can incorporate cutting-edge research modules for validation.</p>'+
-      '<p>Website: <a href="http://www.bic.mni.mcgill.ca/ServicesSoftwareVisualization/IBIS" target="blank">IBIS</a></p>'+
+      '<p><b>Infant Brain Imaging Study (IBIS)</b> is a project to increase our understanding of the timing and pattern of brain development in very young children with autism. </p>'+
+      '<p>Website: <a href="http://www.ibis-network.org/" target="blank">ibis-network.org</a></p>'+
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(38.621167, -90.192309),
@@ -447,10 +446,10 @@ makeMarker({
 
 var contentString = 
       '<div>'+
-      '<img src="" class="logo">'+
+      '<img src="http://www.ibis-network.org/Images/TitleBarNavigateSM-ACE.gif" class="logo">'+
       '<h1>IBIS North Carolina</h1>'+
-      '<p><b>IBIS</b> (Intraoperative Brain Imaging System) is an Image-Guided Neurosurgery software platform. It is meant to replicate the basic functionality of commercial image-guided systems such as Medtronic’s StealthStation while offering researchers an open system in which they can incorporate cutting-edge research modules for validation.</p>'+
-      '<p>Website: <a href="http://www.bic.mni.mcgill.ca/ServicesSoftwareVisualization/IBIS" target="blank">IBIS</a></p>'+
+      '<p><b>Infant Brain Imaging Study (IBIS)</b> is a project to increase our understanding of the timing and pattern of brain development in very young children with autism. </p>'+
+      '<p>Website: <a href="http://www.ibis-network.org/" target="blank">ibis-network.org</a></p>'+
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(35.230349, -80.834388),
@@ -462,13 +461,13 @@ makeMarker({
    
 var contentString = 
       '<div>'+
-      '<img src="" class="logo">'+
+      '<img src="http://pediatricmri.nih.gov/nihpd/info/Images/sub_pages_logo.jpg" class="logo">'+
       '<h1>NIH Paediatric Database</h1>'+
-      '<p><b>NIH Paediatric Database</b> is located in California USA.</p>'+
+      '<p><b>NIH</b> MRI Study of Normal Pediatric Development.</p>'+
       '<p>Website: <a href="http://pediatricmri.nih.gov" target="blank">pediatricmri.nih.gov</a></p>'+
       '</div>';
 makeMarker({
-  position: new google.maps.LatLng(37.327618, -121.768387),
+  position: new google.maps.LatLng(39.291661, -105.760953),
   title: "NIH Paediatric Database",
   sidebarItem: "NIH Paediatric Database",
   content: contentString,
@@ -498,9 +497,9 @@ var contentString =
       '<p>Website: <a href="http://fcon_1000.projects.nitrc.org/indi/abide/" target="blank">ABIDE website</a></p>'+
       '</div>';
 makeMarker({
-  position: new google.maps.LatLng(52.456693, -1.952059),
-  title: "Autism Brain Imaging Data Exchange",
-  sidebarItem: "Autism Brain Imaging Data Exchange",
+  position: new google.maps.LatLng(42.358780, -71.059905),
+  title: "ABIDE",
+  sidebarItem: "ABIDE",
   content: contentString,
   icon: image
 }); 
@@ -554,7 +553,7 @@ var contentString =
       '<div>'+
       '<img src="http://www.bioeng.nus.edu.sg/cfa/images/nuslogo.png" class="logo">'+
       '<h1>National University of Singapore: GUSTO</h1>'+
-      "<p><b>The GUSTO</b> involves a partnership of two academic research centers, National University of Singapore (NUS) and Singapore Institute for Clinical Sciences (SICS) with two child health centers; National University Hospital (NUH) and Kandang Kerbau Women's and Children's Hospital (KKH). The GUSTO project focuses on the relation between fetal development and the risks for obesity and metabolic dysfunction as well as psychopathology.</p>"+
+      "<p><b>The GUSTO project</b> focuses on the relation between fetal development and the risks for obesity and metabolic dysfunction as well as psychopathology. GUSTO involves a partnership of two academic research centers, National University of Singapore (NUS) and Singapore Institute for Clinical Sciences (SICS) with two child health centers; National University Hospital (NUH) and Kandang Kerbau Women's and Children's Hospital (KKH). </p>"+
       '<p>Website: <a href="http://www.bioeng.nus.edu.sg/cfa/gusto.html" target="blank">www.bioeng.nus.edu.sg</a></p>'+
       '</div>';
 makeMarker({
@@ -569,7 +568,7 @@ var contentString =
       '<div>'+
       '<img src="http://www.uvm.edu/sites/all/themes/uvmbase/images/uvmlogo2014.svg" class="logo">'+
       '<h1>The University of Vermont</h1>'+
-      "<p><b>The University of Vermont</b> is locoated in Vermont New Hampshire.</p>"+
+      "<p><b>The University of Vermont</b> is locoated in Burlington Vermont.</p>"+
       '<p>Website: <a href="http://www.uvm.edu" target="blank">www.uvm.edu</a></p>'+
       '</div>';
 makeMarker({
@@ -589,8 +588,8 @@ var contentString =
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(50.922477, 6.361087),
-  title: "1000 Gehirne ",
-  sidebarItem: "1000 Gehirne ",
+  title: "1000 BRAINS ",
+  sidebarItem: "1000 BRAINS ",
   content: contentString,
   icon: image
 }); 
@@ -604,8 +603,8 @@ var contentString =
       '</div>';
 makeMarker({
   position: new google.maps.LatLng(45.504717, -73.577130),
-  title: "The Open MEG Archive (OMEGA)",
-  sidebarItem: "The Open MEG Archive (OMEGA)",
+  title: "OMEGA",
+  sidebarItem: "OMEGA",
   content: contentString,
   icon: image
 }); 
@@ -636,6 +635,21 @@ makeMarker({
   position: new google.maps.LatLng(39.867886, 116.353041),
   title: "Capital Medical University",
   sidebarItem: "Capital Medical University Beijing",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.ualberta.ca/~publicas/uofa/img/logo.svg" class="logo">'+
+      '<h1>University of Alberta</h1>'+
+      "<p><b>The University of Alberta</b> is located in Edmonton Alberta. </p>"+
+      '<p>Website: <a href="https://ualberta.ca/" target="blank">ualberta.ca</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(53.523442, -113.525954),
+  title: "University of Alberta",
+  sidebarItem: "University of Alberta",
   content: contentString,
   icon: image
 }); 
