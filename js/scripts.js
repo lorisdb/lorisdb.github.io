@@ -238,7 +238,6 @@ SidebarItem.prototype.remove = function(){
 var image = '../images/mini-db.png';
 
 
-
 /*
 * this variable sets the 
 * content inside the container window
@@ -521,6 +520,125 @@ makeMarker({
   icon: image
 });  
 
+var contentString = 
+      '<div>'+
+      '<img src="http://www.nbrc.ac.in/picgal/logo/logonew_02.png" class="logo">'+
+      '<h1>National Brain Research Centre</h1>'+
+      '<p><b>National Brain Research Centre</b> is the only institute in India dedicated to neuroscience research and education. Scientists and students of NBRC come from diverse academic backgrounds, including biological, computational, mathematical, physical, engineering and medical sciences, and use multidisciplinary approaches to understand the brain. </p>'+
+      '<p>Website: <a href="http://www.nbrc.ac.in/" target="blank">www.nbrc.ac.in</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(28.332309, 76.938559),
+  title: "NATIONAL BRAIN RESEARCH CENTRE",
+  sidebarItem: "National Brain Research Centre",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.eur.nl/fileadmin/templates/fabrique/img/logo.png" class="logo">'+
+      '<h1>Erasmus University</h1>'+
+      '<p><b>Erasmus University</b> is located in Rotterdam Netherlads</p>'+
+      '<p>Website: <a href="http://www.eur.nl/" target="blank">www.eur.nl</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(51.917915, 4.526206),
+  title: "Erasmus University",
+  sidebarItem: "Erasmus University",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.bioeng.nus.edu.sg/cfa/images/nuslogo.png" class="logo">'+
+      '<h1>National University of Singapore: GUSTO</h1>'+
+      "<p><b>The GUSTO</b> involves a partnership of two academic research centers, National University of Singapore (NUS) and Singapore Institute for Clinical Sciences (SICS) with two child health centers; National University Hospital (NUH) and Kandang Kerbau Women's and Children's Hospital (KKH). The GUSTO project focuses on the relation between fetal development and the risks for obesity and metabolic dysfunction as well as psychopathology.</p>"+
+      '<p>Website: <a href="http://www.bioeng.nus.edu.sg/cfa/gusto.html" target="blank">www.bioeng.nus.edu.sg</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(1.296578, 103.776297),
+  title: "National University of Singapore",
+  sidebarItem: "National University of Singapore: GUSTO",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.uvm.edu/sites/all/themes/uvmbase/images/uvmlogo2014.svg" class="logo">'+
+      '<h1>The University of Vermont</h1>'+
+      "<p><b>The University of Vermont</b> is locoated in Vermont New Hampshire.</p>"+
+      '<p>Website: <a href="http://www.uvm.edu" target="blank">www.uvm.edu</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(44.477837, -73.196635),
+  title: "University of Vermont",
+  sidebarItem: "University of Vermont",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.fz-juelich.de/SiteGlobals/StyleBundles/Bilder/NeuesLayout/logo.gif?__blob=normal" class="logo">'+
+      '<h1>1000 Gehirne</h1>'+
+      "<p><b>1000 BRAINS</b> is a study on brain ageing and related interindividual variability.</p>"+
+      '<p>Website: <a href="http://www.fz-juelich.de/inm/inm-1/DE/Forschung/1000_Gehirne_Studie/1000_Gehirne_Studie_node.html" target="blank">www.fz-juelich.de</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(50.922477, 6.361087),
+  title: "1000 Gehirne ",
+  sidebarItem: "1000 Gehirne ",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.mcgill.ca/sites/all/themes/blofeld/images/logo_red.png" class="logo">'+
+      '<h1>The Open MEG Archive (OMEGA)</h1>'+
+      "<p><b>The Open MEG Archive (OMEGA)</b> is the fruit of a collaborative effort by the McConnell Brain Imaging Centre and the Université de Montréal to build a centralised repository in which to regroup MEG data in raw and processed form, for open dissemination.</p>"+
+      '<p>Website: <a href="https://www.mcgill.ca/bic/resources/omega" target="blank">www.mcgill.ca</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(45.504717, -73.577130),
+  title: "The Open MEG Archive (OMEGA)",
+  sidebarItem: "The Open MEG Archive (OMEGA)",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.braininstitute.ca/sites/all/themes/obi_revision/img/logo-revision.png" class="logo">'+
+      '<h1>Ontario Brain Institute</h1>'+
+      "<p><b>Ontario Brain Institute</b> The Ontario Brain Institute is a provincially‐funded, not‐for‐profit research centre seeking to maximize the impact of neuroscience and establish Ontario as a world leader in brain research, commercialization and care. </p>"+
+      '<p>Website: <a href="http://www.braininstitute.ca/" target="blank">www.braininstitute.ca</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(43.654639, -79.388779),
+  title: "Ontario Brain Institute",
+  sidebarItem: "Ontario Brain Institute",
+  content: contentString,
+  icon: image
+}); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.ccmu.edu.cn/images/sylogo.gif" class="logo">'+
+      '<h1>Capital Medical University</h1>'+
+      "<p><b>Capital Medical University</b> is part of the CanadaChina project and is located in Beijing China. </p>"+
+      '<p>Website: <a href="http://www.ccmu.edu.cn/" target="blank">www.ccmu.edu.cn</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(39.867886, 116.353041),
+  title: "Capital Medical University",
+  sidebarItem: "Capital Medical University Beijing",
+  content: contentString,
+  icon: image
+}); 
 /**
  *   fit viewport to markers
  * commented out as the map is set to focus on the center of the atlantic ocean.

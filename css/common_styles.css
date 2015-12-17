@@ -936,7 +936,7 @@ label, input, textarea {
 	height: 130%;
 	width: 100%;
 	overflow: visible;
-	padding: 0;
+	padding: 100px 0 0 0;
 }
 #map iframe {
 	height: 90%;

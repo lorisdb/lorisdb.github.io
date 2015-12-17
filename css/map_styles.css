@@ -125,7 +125,6 @@ body, html {
 	float:left; 
 	height:80%;
 	width:20%;
-	max-height:1024px;
 	margin: 0 ;
 	overflow: auto;
 	background-color: #797979; 
@@ -191,11 +190,12 @@ body, html {
 }
 #map-holder #sidebar {
 	width: 100%;
-	height: auto;
+	height: 250px;
+	overflow: auto;
 }
 #map-holder button {
 	width: 50% !important;
-	min-height: 65px;
+	height: 65px;
 	float: left;
 }
 #map-holder img.lorisLogo {
@@ -203,8 +203,10 @@ body, html {
 	height:auto;
 	max-width:100px;
 }
-#map-holder #sidebar{
-	height: auto;
-}	
 }
 
+@media screen and (max-width: 340px) {
+#map-holder button {
+	height: 80px;
+}
+}
