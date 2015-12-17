@@ -235,7 +235,7 @@ SidebarItem.prototype.remove = function(){
 /* 
 * this is an icon of a db
 */
-var image = 'mini-db.png';
+var image = '../images/mini-db.png';
 
 
 
