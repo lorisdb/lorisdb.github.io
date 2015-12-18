@@ -135,7 +135,7 @@ $( document ).ready( function() {
 
     <a href="#to-top" class="ease"><div class="top-button">TOP</div></a>
 
-<!-- slicknav script -->
+<!-- slicknav script, nav animation, div height scripts -->
 
 <script type="text/javascript">
   $(document).ready(function(){
@@ -149,7 +149,16 @@ $( document ).ready( function() {
     else{
         $('#top').removeClass("mini");
     }
-});
+  });
+
+  $(function() {
+    $('.divheight').matchHeight({
+    byRow: true,
+    property: 'height',
+    target: null,
+    remove: false
+    });
+  });
 </script>
  </body>
  <html>
