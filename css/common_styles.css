@@ -193,7 +193,7 @@ p.code {
 }
 #wrapper .parallax-one {
 	background-image:url(../images/LORIS-blurred.jpg);
-	padding: 200px 0 100px 0;
+	padding: 200px 0 50px 0;
 }
 #wrapper .parallax-two {
 	background-image:url(../images/LORIS-blurred.jpg);
@@ -398,9 +398,10 @@ nav ul li.first {
 	overflow: auto;
 	position: relative;
 }
+
 .topcontent {
 	display: block;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 	overflow: auto;
 }
 .bottom-margin {
@@ -423,7 +424,7 @@ nav ul li.first {
 	background: #1992be;
 	overflow: auto;
 }
-.blue a:hover {
+.blue a:hover, .grey a:hover {
 	color: #f47c20;
 }
 .blue h1 {
@@ -432,13 +433,22 @@ nav ul li.first {
 .teal {
 	background: #4fbdac;
 }
-.teal p, .teal h1, .teal h2, .teal h3, .grey p, .grey h1, .grey h2, .grey h3, .blue p, .blue h1, .blue h2, .blue h3, .blue a  {
+.teal p, .teal h1, .teal h2, .teal h3, .grey p, .grey h1, .grey h2, .grey h3, .blue p, .blue h1, .blue h2, .blue h3, .blue a, .grey a  {
 	color: #fff;
+}
+.fa {
+	display: inline-block !important;
+	margin: 30px 0;
 }
 .big {
 	font-size: 9em !important;
 	color: #fff;
-	margin-bottom: 30px;
+}
+.text {
+	color: #343434;
+}
+.big:hover {
+	color:#f47c20;
 }
 .feature {
 	padding: 100px 7.8%;
@@ -447,6 +457,7 @@ nav ul li.first {
 }
 .clear-content {
 	padding: 1.5em;
+	border-radius: 25px;	
 }
 .clear-content p {
 
@@ -580,7 +591,7 @@ nav ul li.first {
 	display: block;
 	width: 100%;
 	height: 100%;
-	padding: 100px 0 0 0;
+	padding: 200px 0 0 0;
 	overflow: auto;
 }
 .credits-holder {
@@ -691,6 +702,7 @@ button {
 	-o-transition-duration: .25s;
 	transition-duration: .25s;
 }
+
 button:hover {
 	background: rgba(255, 255, 255, 1);
 	color: #f47c20;
@@ -857,13 +869,16 @@ label, input, textarea {
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 .slicknav_menu {
 	display: inline-block;
 }
 #main-nav {
 	display: none;
 }
+}
+
+@media screen and (max-width: 700px) {
 .feature-p {
 	width: 80%;
 	padding-left: 0;
