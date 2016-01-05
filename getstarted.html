@@ -146,7 +146,7 @@ $( document ).ready( function() {
                 <p class="code">sudo useradd -U -m -G sudo -s /bin/bash lorisadmin<br>
                 sudo passwd lorisadmin<br>
                 su - lorisadmin</p>
-                <p><strong>Important: All steps from this point forward must be executed by lorisadmin user</strong>.</p>
+                <p><em>Important: All steps from this point forward must be executed by lorisadmin user.</em></p>
                 <p class="code">sudo mkdir -m 775 -p /var/www/$projectname<br>
                 sudo chown lorisadmin.lorisadmin /var/www/$projectname
                 </p>
@@ -167,7 +167,7 @@ $( document ).ready( function() {
 
               <li>
                 <p>Go to http://localhost to verify that the LORIS core database has been successfully installed. Congratulations! Log in with the username “admin” and the password you supplied for this user while running the Install script.</p>
-                <p><strong>Note: Apache config files will be installed as *.conf, per Ubuntu 14.04. Rename these if running earlier version.</strong></p>
+                <p><em>Note: Apache config files will be installed as *.conf, per Ubuntu 14.04. Rename these if running earlier version.</em></p>
                 <p class="code">sudo a2dissite default<br>
                 sudo a2ensite $projectname</p>
               </li>
