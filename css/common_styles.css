@@ -195,7 +195,7 @@ p.code {
 }
 #wrapper .parallax-one {
 	background-image:url(../images/LORIS-blurred.jpg);
-	padding: 200px 0 50px 0;
+	padding: 200px 0 0 0;
 }
 #wrapper .parallax-two {
 	background-image:url(../images/LORIS-blurred.jpg);
@@ -228,7 +228,7 @@ p.code {
 header {
 	width: 100%;
 	height:100px;
-	background: rgba(255,255,255,.75);
+	background: rgba(255,255,255,.90);
 	overflow:auto;	
 	padding: 1em;
 	position: fixed;
@@ -403,11 +403,14 @@ nav ul li.first {
 
 .topcontent {
 	display: block;
-	margin-bottom: 0px;
+	margin-bottom: 30px;
 	overflow: auto;
 }
 .bottom-margin {
 	margin-bottom: 50px;
+}
+.topmargin {
+	margin-top: 100px;
 }
 .white {
 	background: #fff;
@@ -445,6 +448,11 @@ nav ul li.first {
 .big {
 	font-size: 9em !important;
 	color: #fff;
+	-webkit-transition-duration: .25s;
+	-moz-transition-duration: .25s;
+	-ms-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	transition-duration: .25s;	
 }
 .text {
 	color: #343434;
@@ -593,7 +601,7 @@ nav ul li.first {
 	display: block;
 	width: 100%;
 	height: 100%;
-	padding: 200px 0 0 0;
+	padding: 100px 0 0 0;
 	overflow: auto;
 }
 .credits-holder {
@@ -791,6 +799,9 @@ footer img:hover {
 	margin: 0 auto;
 	overflow: hidden;
 }
+.maphead {
+	display: none !important;
+}
 
 /* Section - top button */
 /**************************/
@@ -950,13 +961,13 @@ label, input, textarea {
 	padding-left: 0;
 }
 #map {
-	height: 130%;
+	height: 100%;
 	width: 100%;
 	overflow: visible;
 	padding: 100px 0 0 0;
 }
 #map iframe {
-	height: 90%;
+	height: 100%;
 }
 .credits-box {
 	width: 33.33%;
