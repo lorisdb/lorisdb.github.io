@@ -198,7 +198,7 @@ body, html {
 }
 #map-holder button {
 	width: 50% !important;
-	height: 65px;
+	height: 80px;
 	float: left;
 }
 #map-holder img.lorisLogo {
@@ -211,6 +211,7 @@ body, html {
 
 @media screen and (max-width: 340px) {
 #map-holder button {
-	height: 80px;
+	height: auto;
+	min-height: 80px;
 }
 }
