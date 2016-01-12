@@ -82,26 +82,23 @@ $( document ).ready( function() {
         <div class="content">
           <h1 class="center">Let's Get Started</h1>
           <div class="three-column">
-            <div class="clear-content center">
-              <a href="#one" class="ease"><i class="fa fa-cloud-download big  text"></i></a>
+            <div class="clear-content center ">
+              <a href="#one" class="ease"><i class="fa fa-cloud-download big text ro"></i></a>
               <h2 class="center">1. Download</h2>
-              <p>LORIS can be downloaded from Github repository for:</p>
             </div>
           </div>
 
           <div class="three-column">
-            <div class="clear-content center">
-              <a href="#two" class="ease"><i class="fa fa-laptop big text"></i></a>
+            <div class="clear-content center ">
+              <a href="#two" class="ease"><i class="fa fa-laptop big text ro"></i></a>
               <h2 class="center">2. Install</h2>
-              <p>Once downloaded, install on your system by referring to the <a href="https://github.com/aces/Loris/wiki" class="underline" target="_blank">documentation</a>.</p>
             </div>
           </div>  
 
           <div class="three-column">
-            <div class="clear-content center">
-              <a href="#three" class="ease"><i class="fa fa-wrench big text"></i></a>
+            <div class="clear-content center ">
+              <a href="#three" class="ease"><i class="fa fa-wrench big text ro"></i></a>
               <h2 class="center">3. Configure</h2>
-              <p>LORIS can be configured for various tasks and studies. Please refer to the <a href="https://github.com/aces/Loris/wiki" class="underline" target="_blank">documentation</a>.</p>
             </div>
           </div> 
           <div class="clear"></div> 
@@ -112,11 +109,12 @@ $( document ).ready( function() {
 
     <section id="one">
         <div class="teal block">
-          <h1 class="center"> Get Started</h1>
+          <!--<h1 class="center"> Get Started</h1>-->
+          <i class="fa fa-cloud-download big center"></i>
           <h2 class="center"> 1. Download </h2>
           <div class="feature-p">
-            <p class="bottom-margin center"> LORIS is an open-source platform. The latest version is available for download on Github.</p>
-            <div class="blue-content">
+            <p class="bottom-margin center"> LORIS is an open-source platform.  Download the latest release (15.10.1) from our <a href="https://github.com/aces/Loris/releases" class="underline">GitHub repository</a>. </p>
+            <div class="requirements">
               <h3 class ="center">Linux Requirements </h3>
               <ul>
                 <li>LINUX (supported on Ubuntu 14.04 and CentOS 6.5) or Mac OS X (tested for Mavericks - OS X 10.9)</li>
@@ -135,84 +133,21 @@ $( document ).ready( function() {
 
     <section id="two">
       <div class="block grey">
+        <i class="fa fa-laptop big center"></i>
         <h2 class="center"> 2. Install </h2>
         
-        <div class="feature-p ">
-          <p class="bottom-margin">Installing LORIS is as easy as following the steps as outlined below:</p>
-          <h3 class="center"> LINUX INSTALL </h3>
-          <p class="bottom-margin">
-            <ol class="">
-              <li><p> Set up LINUX user lorisadmin and create LORIS base directory:</p>
-                <p class="code">sudo useradd -U -m -G sudo -s /bin/bash lorisadmin<br>
-                sudo passwd lorisadmin<br>
-                su - lorisadmin</p>
-                <p><em>Important: All steps from this point forward must be executed by lorisadmin user.</em></p>
-                <p class="code">sudo mkdir -m 775 -p /var/www/$projectname<br>
-                sudo chown lorisadmin.lorisadmin /var/www/$projectname
-                </p>
-                <p>$projectname “loris” or one-word project name</p>
-              </li>
-
-              <li>
-                <p>Get code: Download the latest release from the releases page and extract it to /var/www/$projectname</p>
-              </li>
-
-              <li>
-                <p>Run installer script to install core code, libraries, and MySQL schema (see LORIS Setup Schematic). The script will prompt for information, including usernames and folders which it will create automatically.</p>
-                <p>For more information, please read the <a href="https://github.com/aces/Loris/wiki/Install-Script" target="_blank">Install Script wiki page.</a></p>
-                <p class="code">cd /var/www/$projectname/tools<br>
-                ./install.sh<br>
-                sudo service apache2 reload</p>
-              </li>
-
-              <li>
-                <p>Go to http://localhost to verify that the LORIS core database has been successfully installed. Congratulations! Log in with the username “admin” and the password you supplied for this user while running the Install script.</p>
-                <p><em>Note: Apache config files will be installed as *.conf, per Ubuntu 14.04. Rename these if running earlier version.</em></p>
-                <p class="code">sudo a2dissite default<br>
-                sudo a2ensite $projectname</p>
-              </li>
-
-              <li>
-                <p>Note that the default Loris setup assumes that Loris is running on localhost. If this is not the case, you'll have to manually update the URL and Host config variables in the ConfigSettings table by running the following SQL commands from a MySQL prompt:</p>
-                <p class="code">UPDATE Config SET Value='$yourURL' WHERE ConfigID=(SELECT ID FROM ConfigSettings WHERE Name='url');<br>
-                UPDATE Config SET Value='$yourHostname' WHERE ConfigID=(SELECT ID FROM ConfigSettings WHERE Name='host');</p>
-                <p>Make sure that $yourURL above contains the "http://" or "https://" and $yourHostname does not. If your server is only being accessed from localhost, you can skip this step.</p>
-              </li>
-
-              <li>
-                <p>Notes for LORIS post-installation setup are contained in the:</p>
-              </li>
-            </ol>            
-          </p>
-          <h2 class="center"><a href="https://github.com/aces/Loris/wiki/Setup" target="_blank"><i class="fa fa-file-text-o"></i> LORIS WIKI</a></h2>
+        <div class="feature-p center">
+          <p>Once downloaded, follow the <a href="https://github.com/aces/Loris/tree/15.10-dev" class="underline">Readme for Ubuntu</a> or the <a href="https://github.com/aces/Loris/blob/15.10-dev/README.CentOS6.md" class="underline">Readme for CentOS</a> to install LORIS.You’ll be asked to install a few dependencies, and then run the Install script. Read more on our <a href="https://github.com/aces/Loris/wiki/Install-Script" class="underline">GitHub Wiki</a></p>  
         </div>
-      </div>
       <div class="clear"></div>
     </section>
 
     <section id="three">
       <div class="block ">
+        <i class="fa fa-wrench big text center"></i>
         <h2 class="center"> 3. Configure </h2>
-        <div class="feature-p">
-          <p>If you are installing LORIS, please see the <a href="https://github.com/aces/Loris" class="underline" target="_blank">README</a> and follow all Installation steps for the most recent <a href="https://github.com/aces/Loris/releases" class="underline" target="_blank">Release</a>, as well as <a href="https://github.com/aces/Loris/wiki/Install-Script" class="underline" target="_blank">additional notes</a> on how to run the install script and set up Loris for different operating systems.</p>
-
-        <p><a href="https://github.com/aces/Loris/wiki/CentOS-install-guide" class="underline" target="_blank">CentOS Install Readme</a> - New for 15.10</p>
-        <p><a href="https://github.com/aces/Loris/blob/master/README.Mac.md" class="underline" target="_blank">Mac Install Readme</a> - Note Mac OS X is no longer supported as of 15.10</p>
-
-        <p>Follow these steps to setup and customize your LORIS</p>
-
-        <div>
-          <ol>
-            <li><a href="https://github.com/aces/Loris/wiki/Install-Script" target="_blank">Install Script</a></li>
-            <li><a href="https://github.com/aces/Loris/wiki/Project-Customization" target="_blank">Project Customization</a></li>
-            <li><a href="https://github.com/aces/Loris/wiki/Behavioural-Database" target="_blank">Behavioural Database</a></li>
-            <li><a href="https://github.com/aces/Loris/wiki/Imaging-Database" target="_blank">Imaging Database</a></li>
-            <li><a href="https://github.com/aces/Loris/wiki/LORIS-Modules" target="_blank">LORIS Modules</a></li>
-            <li><a href="https://github.com/aces/Loris/wiki/Data-Querying-Tool" target="_blank">Data Querying Tool</a></li>
-            <li><a href="https://github.com/aces/Loris/wiki/Backups" target="_blank">Backups</a></li>
-            <li><a href="https://github.com/aces/Loris/wiki/Security%3A-Enabling-SSL" target="_blank">Security: Enabling SSL</a></li>
-            <li><a href="https://github.com/aces/Loris/wiki/Enable-mail-server" target="_blank">Enable Mail Server</a></li>
-          </ol>
+        <div class="feature-p center">
+          <p>To complete the setup of your LORIS installation, follow the <a href="https://github.com/aces/Loris/wiki/Setup" class="underline">Setup guide in our GitHub Wiki</a>.  This documentation will walk you through the process of defining Loris’ many options for your dataset and data collection environment.</p>
         </div>
       </div>
       <div class="clear"></div>
@@ -220,27 +155,11 @@ $( document ).ready( function() {
 
     <section id="">
       <div class="block blue">
+        <i class="fa fa-level-up big center"></i>
         <h2 class="center"> 4. Updating </h2>
-        <div class="feature-p ">
+        <div class="feature-p center">
           <h3 class=""> How To Update </h3>
-          <p class="">We recommend upgrading to the most recent LORIS release.</p>
-
-          <p>Update your LORIS by pulling the release code and applying the MySQL patch associated with that release in the SQL/ directory. Carefully note modifications to data columns and data type definitions, and recent merges tagged with Caveat for Existing Projects. Also be sure to consult the most recent Release Notes. Composer must be installed as of release 15.04.</p>
-
-          <p>If you are used to upgrading to the latest code in the Development branch, we no longer recommend this practice as of release 14.12. </p>
-
-          <p>If you are a developer used to working on the development branch, note that as of 15.10 the master branch is reserved for stable releases. e.g. 16.04-dev is the next development branch.</p>
-
-          <p>It may help to update tables to utf8 character set:</p>
-
-          <p class="code">ALTER TABLE users CONVERT TO CHARACTER SET utf8;</p>
-
-          <h3 class=""> Updating Permissions</h3>
-
-          <p>Re-grant the administrative user all available permissions:</p>  
-
-          <p class="code">INSERT IGNORE INTO `user_perm_rel` (userID, permID) SELECT DISTINCT 1, permID FROM permissions;</p>
-
+          <p class="">To update your LORIS to a new release, follow our <a href="https://github.com/aces/Loris/wiki/Setup#updating-your-loris" class="underline">documentation</a> and special release notes for existing projects </p>
         </div>
       </div>
       <div class="clear"></div>

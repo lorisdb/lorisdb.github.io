@@ -422,7 +422,7 @@ nav ul li.first {
 .grey {
 	background: #797979;
 }
-.grey ol {
+.grey ol, .teal ul {
 	color: #fff;
 }
 .blue {
@@ -448,6 +448,9 @@ nav ul li.first {
 .big {
 	font-size: 9em !important;
 	color: #fff;
+}
+.ro {
+	color: #fff;
 	-webkit-transition-duration: .25s;
 	-moz-transition-duration: .25s;
 	-ms-transition-duration: .25s;
@@ -457,7 +460,7 @@ nav ul li.first {
 .text {
 	color: #343434;
 }
-.big:hover {
+.ro:hover {
 	color:#f47c20;
 }
 .feature {
@@ -587,9 +590,15 @@ nav ul li.first {
 	float: left;
 }
 .requirements {
-	width: 35%;
+	width: 60%;
 	height: auto;
 	margin: 0 auto;
+	border: solid 1px #fff;
+	border-radius: 25px;
+	padding: 20px 20px 0 20px;
+}
+.requirements h2 {
+	margin-bottom: 0 !important;
 }
 #credits {
 	display: block;
@@ -823,6 +832,12 @@ footer img:hover {
 
 /* Media Queries */
 /**************************/
+@media screen and (max-width: 1280px)  {
+.requirements {
+	width:80%;
+}
+}
+
 @media screen and (max-width: 1070px)  {
 .credits h2 {
 	font-size: 1.1em !important;
@@ -879,7 +894,9 @@ label, input, textarea {
 .credits-box {
 	width: 25%;
 }
-
+.requirements{
+	width:100%;
+}
 }
 
 @media screen and (max-width: 800px) {
@@ -888,6 +905,9 @@ label, input, textarea {
 }
 #main-nav {
 	display: none;
+}
+.requirements{
+	width:80%;
 }
 }
 
