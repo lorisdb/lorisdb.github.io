@@ -113,7 +113,7 @@ var mapOpts = {
   ],
 
   center: new google.maps.LatLng(45.510205, -73.580565),
-  zoom: 3,
+  zoom: 2,
   zoomControl: true,
   zoomControlOptions: {
   style: google.maps.ZoomControlStyle.SMALL,
