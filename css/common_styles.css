@@ -768,9 +768,21 @@ button:hover {
 	width: 82%;
 	float: right;
 }
+.textbox-third {
+	width: 33%;
+	float: left;
+}
+.textbox-twothird {
+	width: 66%;
+	float: left;
+}
 .textbox-icon {
 	font-size: 1.5em !important;
 	margin-top: .25em;
+}
+.textbox-icon-big {
+	font-size: 2em !important;
+	margin: 0em;
 }
 /* Section - footer */
 /**************************/
