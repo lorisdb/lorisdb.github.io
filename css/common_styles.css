@@ -409,6 +409,9 @@ nav ul li.first {
 .bottom-margin {
 	margin-bottom: 50px;
 }
+.bottom-padding-none {
+	padding-bottom: 0 !important;
+}
 .topmargin {
 	margin-top: 100px;
 }
@@ -550,8 +553,10 @@ nav ul li.first {
 }
 .feature-image-center {
 	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 	height: 400px;
-	padding: 0 7.9%;
+	/*padding: 0 7.9%;*/
 	text-align: center;
 	overflow: hidden;
 }
