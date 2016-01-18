@@ -87,7 +87,7 @@ $( document ).ready( function() {
               <li><a href="#one" class="ease">What is LORIS used for?</a></li>
               <li><a href="#two" class="ease">Why use LORIS?</a></li>
               <li><a href="#three" class="ease">What do I need to install and maintain LORIS?</a></li>
-              <li><a href="#four" class="ease">How to get LORIS?</a></li>              
+              <li><a href="#four" class="ease">How do I get LORIS?</a></li>              
               <li><a href="#five" class="ease">How is LORIS licensed?</a></li>
               <li><a href="#six" class="ease">How can I import behavioral data from other databases into LORIS?</a></li>
               <li><a href="#seven" class="ease">How easily can I export data from LORIS to other software for analysis?</a></li>
@@ -97,8 +97,8 @@ $( document ).ready( function() {
               <li><a href="#eleven" class="ease">Can I have custom scoring for clinical/neuropsychological measures?</a></li>
               <li><a href="#twelve" class="ease">How much coding is required for implementing clinical/neuropsychological instruments?</a></li>
               <li><a href="#thirteen" class="ease">What is a LORIS Instrument?</a></li>
-              <li><a href="#fourteen" class="ease">How can I add copy-righted questionnaires to LORIS?</a></li>
-              <li><a href="#fifteen" class="ease">Can I collect survey data using LORIS interface?</a></li>
+              <li><a href="#fourteen" class="ease">How can I add copyrighted questionnaires to LORIS?</a></li>
+              <li><a href="#fifteen" class="ease">Can I collect survey data using the LORIS interface?</a></li>
               <li><a href="#sixteen" class="ease" id="one">How fast can LORIS query and extract data for download from large datasets?</a></li>
               <li><a href="#seventeen" class="ease">How is data validated in LORIS?</a> </li>
               <li><a href="#eighteen" class="ease">What is a LORIS Module?</a></li> 
@@ -106,59 +106,62 @@ $( document ).ready( function() {
             </ol>
 
             <strong id="two">1. What is LORIS used for?</strong>
-            <p>LORIS is a flexible web-based platform that facilitates and centralizes data collection and data management in multi-center, multi-modal integrative neuroimaging and behavioral studies.</p>
+            <p>LORIS is a flexible web-based platform that facilitates and centralizes data collection and data management in multi-center, multi-modal integrative neuroimaging and behavioral studies. </p>
 
             <strong id="three">2. Why use LORIS?</strong>
             <p>LORIS is designed to simplify integration, management, and dissemination of cohort studies that include various neuroimaging modalities, behavioral tests, genetic, and neurophysiological data. It provides secure web-based access to data validation and quality control modules, as well as visualization and basic statistical tools. </p>
 
             <strong id="four">3. What do I need to install and maintain LORIS?</strong>
-            <p>...</p>
+            <p>The prerequisites to install LORIS and installation instructions are in the LORIS README. After installation, your LORIS must be configured - see Initial Setup and Configuration (https://github.com/aces/Loris/wiki/Setup). It is recommended to upgrade to the most <a href="https://github.com/aces/Loris/releases" class="underline" target="_blank">recent LORIS release</a> - see <a href="https://github.com/aces/Loris/wiki/Setup" class="underline" target="_blank">Updating your LORIS</a> for more details. </p>
 
             <strong id="five">4. How to get LORIS?</strong>
-            <p>The latest build of LORIS can be downloaded on <a href="https://github.com/aces/LORIS" class="underline" target="_blank">Github.</a></p>
+            <p>The latest build of LORIS can be downloaded on <a href="https://github.com/aces/LORIS" class="underline" target="_blank">Github</a>- see our <a href="getstarted.html" class="underline">Getting Started</a> page.</p>
 
             <strong id="six"> 5. How is LORIS licensed? </strong>
             <p>LORIS is open source software. It is released under the GPLv3 license.</p>
 
-            <strong id="seven">6. How can I import behavioral data from other databases into LORIS?
-</strong>
-            <p>LORIS can import data via CSV uploaders, as well as linking to other data repositories via custom pipelines. See the <a>documentation</a> for more information.</p>
+            <strong id="seven">6. How can I import behavioral data from other databases into LORIS?</strong>
+            <p>How can I import behavioral data from other databases into LORIS?
+            LORIS can import data via CSV uploaders, as well as linking to other data repositories via custom pipelines. See <a href="" class="underline" target="_blank">the wiki</a> for more information.</p>
 
             <strong id="eight">7. How easily can I export data from LORIS to other software for analysis?</strong>
-            <p>Data can be queried and exported via the Data Querying Tool, which can then be sent to other data processing and analysis pipelines.</p>
+            <p>Quite Easily! Data can be queried and exported via the Data Querying Tool, which can then be sent to other data processing and analysis pipelines.</p>
 
             <strong id="nine">8. How can I import imaging data into LORIS?</strong>
-            <p>...</p>
+            <p>The instructions to setup the Imaging Database can be found on the wiki - see Setup > <a  href="https://github.com/aces/Loris/wiki/Imaging-Database" class="underline" target="_blank">Imaging Database</a>.</p>
 
             <strong id="ten">9. Can I import MRI data from a scanner to LORIS?</strong>
             <p>...</p>
 
             <strong id="eleven">10. Can LORIS import any DICOM file or only neuroimaging data?</strong>
-            <p>...</p>
+            <p>By default, LORIS is designed for DICOM MRI data collected by a longitudinally-organized multi-site study with a defined data acquisition protocol. With modifications, it can handle any modality of imaging data.</p>
+            
+            <!--<strong id="eleven">10. What imaging data formats can LORIS handle?</strong>
+            <p>LORIS is designed to house MINC, NIfTi, MEG, FreeSurfer, and processed input data, and can be customized for other modalities via fully configurable pipeline and visualization tools. Raw DICOMs are the foundation of the core visualization utilities. Conversion to formats such as MINC and NIfTI can be easily embedded in LORIS data handling pipelines.</p>-->
 
             <strong id="twelve">11. Can I have custom scoring for clinical/neuropsychological measures?</strong>
             <p>Yes. Custom scoring can be implemented for behavioural instruments in a variety of languages including PHP, Python or Matlab. PHP is the most well supported language.</p>
 
             <strong id="thirteen"> 12. How much coding is required for implementing clinical/neuropsychological instruments?</strong>
-            <p>LORIS’ Instrument Builder module enables non-technical staff to create many simple forms. Scoring and field dependencies can be implemented in a wide variety of scripting languages.</p>
+            <p>LORIS’ Instrument Builder module enables non-technical staff to create many simple forms. Scoring and field dependencies can be implemented in a wide variety of scripting languages. See the <a href="https://github.com/aces/Loris/wiki/Behavioural-Database" class="underline" target="_blank">the wiki</a> for more information. </p>
 
             <strong id="fourteen">13. What is a LORIS Instrument?</strong>
-            <p>...</p>
+            <p>A LORIS instrument or instrument form is a behavioural, psychological, or clinical test or questionnaire that is administered to collect data on participants in a given study and is stored in the Behavioural Database. Instrument forms fall into three categories: basic forms, forms with scoring algorithms, and uploaded data. See <a href="https://github.com/aces/Loris/wiki/Behavioural-Database" class="underline" target="_blank">the wiki</a> for more information.</p>
 
-            <strong id="fifteen">14. How can I add copy-righted questionnaires to LORIS?</strong>
-            <p>...</p>
+            <strong id="fifteen">14. How can I add copyrighted questionnaires to LORIS?</strong>
+            <p>Copyrighted questionnaires are often used in LORIS.  Stipulations made by the publisher are very similar to those made when using copyrighted paper forms.  These have included: limiting the number of forms available, affixing the copyright notice to the screen of instrument presentation, obtaining a letter of permission from the publisher and having the publisher approve the online form before going live.</p>
 
-            <strong id="sixteen">15. Can I collect survey data using LORIS interface?</strong>
-            <p>...</p>
+            <strong id="sixteen">15. Can I collect survey data using the LORIS interface?</strong>
+            <p>Absolutely! The Survey Module in LORIS implements survey questionnaire dissemination and survey data recording. This module allows survey distribution via a secured link sent via email.</p>
 
             <strong id="seventeen">16. How fast can LORIS query and extract data for download from large datasets?</strong>
             <p>LORIS’ CouchDB-based Data Querying Tool outperforms traditional MySQL-based cached retrieval by a factor of 4 for data querying and extraction. (Based on a medium-sized study with 7500 instrument datasets.) (D. MacFarlane, 2014) <a href="http://3design.github.io/images/poster.pdf" target="_blank" class="underline">[see poster]</a>.</p>
 
-            <strong id="eighteen">17. How is data validated in LORIS? </strong>
-            <p>LORIS has many Quality Control features enabling study staff to review, flag and track data quality at every level. Additional features in the Statistics module provide at-a-glance outlier identification.</p>
+            <strong id="eighteen">17. How is data validated in LORIS?</strong>
+            <p>LORIS has many Quality Control features enabling study staff to review, flag and track data quality at every level. Additional features in the Statistics module provide at-a-glance outlier identification. See our Quality Control **link to Quality Control here**</p>
 
             <strong id="nineteen">18. What is a LORIS Module?</strong>
-            <p>...</p>
+            <p>A LORIS Module is a customizable component with a specific functionality that can be easily added or removed to accommodate a variety of study requirements. For example, the Candidate Information Module contains all information regarding overall candidate, proband, and participant status. Modules can be accessed through the menu tabs at the top of each LORIS webpage. See <a href="https://github.com/aces/Loris/wiki/LORIS-Modules" class="underline" target="_blank">the wiki</a> for more information. </p>
 
             <strong>19. Where can I find previously coded LORIS instruments?</strong>
             <p>...</p>
