@@ -689,29 +689,25 @@ nav ul li.first {
 }
 .postersmall{
 	float:left;
-	padding: 15px;	
-	width:25%;
+	margin: 1%;	
+	width:23%;
 	position: relative;
 }
 .posterbig {
 	float: left;
-	padding: 15px;
+	padding: 1%;
 	overflow: auto;
-	width: 50%;
+	width: 48%;
 	position: relative;
 }
 .postertext {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 50px 30px 30px;
-	pointer-events: none;		
+	display: block;
+	text-align: center;
+	margin: 1em;
+
 }
 .postertext h2, .postertext h3, .postertext p {
-	text-align: center;
 	text-shadow: 0px 0px 4px rgba(0, 0, 0, .95);
-	margin-bottom: 1em;
 }
 .postertext p{
 	color: #f47c20;
@@ -720,8 +716,8 @@ nav ul li.first {
 .posterbig img, .postersmall img {
 	width: 100%;
 	height: auto;
-    -webkit-filter: contrast(60%) blur(1px) grayscale(50%); /* Chrome, Safari, Opera */
-    filter: contrast(60%) blur(1px) grayscale(50%);
+    -webkit-filter: contrast(60%) blur(0px) grayscale(50%); /* Chrome, Safari, Opera */
+    filter: contrast(60%) blur(0px) grayscale(50%);
 	-webkit-transition-duration: .25s;
 	-moz-transition-duration: .25s;
 	-ms-transition-duration: .25s;
@@ -729,8 +725,8 @@ nav ul li.first {
 	transition-duration: .25s;
 }
 .posterbig img:hover, .postersmall img:hover {
-    -webkit-filter: contrast(100%) blur(0px) grayscale(0%); /* Chrome, Safari, Opera */
-    filter: contrast(100%) blur(0px) grayscale(0%);
+    -webkit-filter: contrast(90%) blur(0px) grayscale(0%); /* Chrome, Safari, Opera */
+    filter: contrast(90%) blur(0px) grayscale(0%);
 }
 .posterholder {
 	width: 80%;
@@ -990,10 +986,10 @@ label, input, textarea {
 	width:100%;
 }
 .postersmall {
-	width:50%;
+	width: 48%;
 }
 .posterbig {
-	width: 100%;
+	width: 100%;a
 }
 }
 
