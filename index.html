@@ -34,15 +34,12 @@
 $( document ).ready( function() {
   $('a.ease').bind('click',function(event){
     var $anchor = $(this);
-
     $('html, body').stop().animate({
       scrollTop: $($anchor.attr('href')).offset().top
     }, 1500,'easeInOutExpo');
     event.preventDefault();
   });
 });
-
-
 </script>
 
 
@@ -138,75 +135,64 @@ $( document ).ready( function() {
     <section id="">
       <div class="block grey">
         <div class="">
-          <h1 class="center"> Features</h1>
-
-          <p class="bottom-margin"> LORIS comes complete with a flexible toolset to manage, process, and disseminate large amounts of data for a variety of study scenarios. Some of the main features include:</p>
-          
           <div class="holder-big">
-            <div class="holder-half">
-              <div class="two-column">
+            <h1 class="center"> Features</h1>
+
+            <p class="bottom-margin"> LORIS comes complete with a flexible toolset to manage, process, and disseminate large amounts of data for a variety of study scenarios. Some of the main features include:</p>
+            <div>
+              <div class="three-column">
                 <a href="features.html#data-collection" class="ease">
                   <div class="blue-content special divheight">
-                  <img src="images/ICON-data.png" alt="icon">
+                  <img src="images/ICON-data.png">
                   <h3>Data Collection</h3>
                   </div>
                 </a>
               </div>
-              
-              <div class="two-column">
-                <a href="features.html#data-management" class="ease">
-                  <div class="blue-content special divheight">
-                    <img src="images/ICON-data-management.png" alt="icon">
-                    <h3>Data Management</h3>
-                  </div>
-                </a>
+              <div class="three-column">
+                  <a href="features.html#data-management" class="ease">
+                    <div class="blue-content special divheight">
+                      <img src="images/ICON-genes.png">
+                      <h3>Genomics</h3>
+                    </div>
+                  </a>
               </div>
-            </div>
-
-            <div class="holder-half">
-              <div class="two-column">
+              <div class="three-column">
                 <a href="features.html#quality-control" class="ease">
                   <div class="blue-content special divheight">
-                    <img src="images/ICON-quality.png" alt="icon">
+                    <img src="images/ICON-quality.png">
                     <h3>Quality Control</h3>
                   </div>
                 </a>
               </div>
-              
-              <div class="two-column">
+            </div>
+            <div>
+              <div class="three-column">
                 <a href="features.html#data-imaging" class="ease">
                   <div class="blue-content special divheight">
-                    <img src="images/ICON-imaging.png" alt="icon">
+                    <img src="images/ICON-imaging.png">
                     <h3>Neuroimaging</h3>
                   </div>
                 </a>
               </div>
-            </div>
-          </div>
-
-          <div class="holder-big">
-            <div class="holder-half">
-              <div class="two-column">
+              <div class="three-column">
                 <a href="features.html#visualization" class="ease">
                   <div class="blue-content special divheight">
-                    <img src="images/ICON-visualization.png" alt="icon">
+                    <img src="images/ICON-visualization.png">
                     <h3>Visualization</h3>
                   </div>
                 </a>
               </div>
-              
-              <div class="two-column">
+              <div class="three-column">
                 <a href="features.html#data-dissemination" class="ease">
                   <div class="blue-content special divheight">
-                    <img src="images/ICON-sharing.png" alt="icon">
+                    <img src="images/ICON-sharing.png" title="Icon created by Freepik">
                     <h3>Data Sharing</h3>
                   </div>
                 </a>
               </div>
             </div>
-
-            <div class="holder-half">
-              <div class="two-column">
+            <div>
+              <div class="three-column">
                 <a href="features.html#customization" class="ease">
                   <div class="blue-content special divheight">
                     <img src="images/ICON-customization.png">
@@ -214,17 +200,25 @@ $( document ).ready( function() {
                   </div>
                 </a>
               </div>
-              
-              <div class="two-column">
+              <div class="three-column">
                 <a href="features.html#responsive" class="ease">
                   <div class="blue-content special divheight">
-                    <img src="images/ICON-responsive.png" alt="icon">
+                    <img src="images/ICON-responsive.png">
                   <h3>Responsive</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="three-column">
+                <a href="features.html#direct-data" class="ease">
+                  <div class="blue-content special divheight">
+                    <img src="images/ICON-data-entry.png" title="Icon created by Freepik">
+                    <h3>Direct Data Entry</h3>
                   </div>
                 </a>
               </div>
             </div>
           </div>
+
           <a href="features.html" class="button help">Find Out More</a>
           <div class="clear"></div>
         </div>
@@ -292,7 +286,6 @@ $( document ).ready( function() {
       $(document).ready(function(){
         $('#menu').slicknav({label:''});
       });
-
       $(window).scroll(function() {
         if ($(this).scrollTop() > 1){  
             $('#top').addClass("mini");
@@ -301,7 +294,6 @@ $( document ).ready( function() {
             $('#top').removeClass("mini");
         }
       });
-
       $(function() {
         $('.divheight').matchHeight({
         byRow: true,
