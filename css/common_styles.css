@@ -340,8 +340,12 @@ nav ul li.first {
 /*different column layouts inside sections*/
 
 .holder-big {
+	width: 100%;
+	max-width: 1400px;	
 	overflow: auto;
 	padding: 0 7%;
+	margin-right: auto;
+	margin-left: auto;
 }
 .holder-big div {
 	overflow: auto;
@@ -516,6 +520,7 @@ nav ul li.first {
 	width: auto;
 	margin-bottom: 20px;
 }
+
 .special {
 	-webkit-transition-duration: .25s;
 	-moz-transition-duration: .25s;
