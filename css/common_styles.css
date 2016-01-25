@@ -954,13 +954,7 @@ footer img:hover {
 .holder-half {
 	width:100%;
 }
-.three-column {
-	width:100%;
-	float: left;
-	margin-bottom: 30px;
-	bottom: 0;
-	right:0;
-}
+
 .three-column p, .three-column h1, .three-column h2, .three-column h3 {
 	text-align: center;
 }
@@ -1020,6 +1014,13 @@ label, input, textarea {
 }
 .requirements{
 	width:80%;
+}
+.three-column {
+	width:100%;
+	float: left;
+	margin-bottom: 30px;
+	bottom: 0;
+	right:0;
 }
 }
 
