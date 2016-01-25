@@ -716,8 +716,8 @@ nav ul li.first {
 .posterbig img, .postersmall img {
 	width: 100%;
 	height: auto;
-    -webkit-filter: contrast(60%) blur(0px) grayscale(50%); /* Chrome, Safari, Opera */
-    filter: contrast(60%) blur(0px) grayscale(50%);
+    -webkit-filter: contrast(90%) saturate(0%); /* Chrome, Safari, Opera */
+    filter: contrast(90%) saturate(0%);
 	-webkit-transition-duration: .25s;
 	-moz-transition-duration: .25s;
 	-ms-transition-duration: .25s;
@@ -725,8 +725,8 @@ nav ul li.first {
 	transition-duration: .25s;
 }
 .posterbig img:hover, .postersmall img:hover {
-    -webkit-filter: contrast(90%) blur(0px) grayscale(0%); /* Chrome, Safari, Opera */
-    filter: contrast(90%) blur(0px) grayscale(0%);
+    -webkit-filter: contrast(90%) saturate(100%); /* Chrome, Safari, Opera */
+    filter: contrast(90%) hsaturate(100%);
 }
 .posterholder {
 	width: 80%;
