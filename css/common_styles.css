@@ -175,7 +175,14 @@ p.code {
 	/*white-space: nowrap;
 	overflow-x: scroll;*/
 }
-
+.whitetext {
+	color: #fff;
+}
+.margincenter {
+	margin-left:auto !important;
+	margin-right:auto !important;
+	float: none !important;
+}
 
 /* Section - Parallax */
 /**************************/
@@ -746,6 +753,7 @@ nav ul li.first {
 	width: 80%;
 	max-width: 1200px;
 	margin: 0 auto;
+	display: block;
 }
 /* Section - form styles */
 /**************************/
