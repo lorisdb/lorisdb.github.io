@@ -714,6 +714,18 @@ nav ul li.first {
 	width:23%;
 	position: relative;
 }
+.article{
+	float:none;
+	margin: 1%;	
+	width:100%;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+}
+.article img {
+	display: block;
+	margin: 0 auto;
+}
 .posterbig {
 	float: left;
 	padding: 1%;
