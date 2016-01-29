@@ -124,7 +124,7 @@ var mapOpts = {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
   },
   scaleControl: true,
-  scrollwheel: true,
+  scrollwheel: false,
   panControl: true,
   streetViewControl: true,
   draggable : true,

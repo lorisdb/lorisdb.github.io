@@ -208,7 +208,7 @@ p.code {
 }
 #wrapper .parallax-one {
 	background-image:url(../images/LORIS-blurred.jpg);
-	padding: 200px 0 0 0;
+	padding: 150px 0 0 0;
 }
 #wrapper .parallax-two {
 	background-image:url(../images/LORIS-blurred.jpg);
@@ -371,7 +371,7 @@ nav ul li.first {
 .two-column {
 	width:50%;
 	float: left;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 	bottom: 0;
 	right:0;	
 }
@@ -426,7 +426,11 @@ nav ul li.first {
 	overflow: auto;
 	position: relative;
 }
-
+.homeblock {
+	padding: 50px 7.8% 75px 7.8%;
+	overflow: auto;
+	position: relative;	
+}
 .topcontent {
 	display: block;
 	margin-bottom: 30px;
