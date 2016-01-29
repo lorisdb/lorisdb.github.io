@@ -726,7 +726,7 @@ nav ul li.first {
 }
 .article{
 	float:left;
-	margin: 1%;	
+	padding: 1%;	
 	width:50%;
 	position: relative;
 	text-align: center;
