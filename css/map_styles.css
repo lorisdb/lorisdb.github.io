@@ -62,6 +62,8 @@ body, html {
 	font-size: 1.875em;
 	margin-bottom: .5em;
 	float: left;
+	display: block;
+	width: 100%;
 }
 
 #map-holder  p {
