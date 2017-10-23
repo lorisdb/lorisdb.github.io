@@ -653,6 +653,52 @@ makeMarker({
   content: contentString,
   icon: image
 }); 
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.ed.ac.uk/sites/all/themes/uoe/assets/logo.png" class="logo">'+
+      '<h1>The University of Edinburgh - Centre for Clinical Brain Sciences</h1>'+
+      '<p><b>The Centre for Clinical Brain Sciences</b> is located in the University of Edinburgh.</p>'+
+      '<p>Website: <a href="http://www.ed.ac.uk/clinical-brain-sciences" target="blank">ed.ac.uk</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(55.945446, -3.189049),
+  title: "The University of Edinburgh - Centre for Clinical Brain Sciences",
+  sidebarItem: "U of Edinburgh",
+  content: contentString,
+  icon: image
+});  
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.bnu.edu.cn/3/imgs/BNU-logo.png" class="logo">'+
+      '<h1>He Lab @ Beijing Normal University</h1>'+
+      '<p><b>The He Lab</b> is located at the Beijing Normal University.</p>'+
+      '<p>Website: <a href="http://helab.bnu.edu.cn/" target="blank">helab.bnu.edu.cn</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(39.962348, 116.366180),
+  title: "He Lab @ BNU",
+  sidebarItem: "He Lab",
+  content: contentString,
+  icon: image
+});  
+
+var contentString = 
+      '<div>'+
+      '<img src="http://www.cneuro.cu/templates/vt_science/css/styles/vt_logo_style4.png" class="logo">'+
+      '<h1>CNEURO</h1>'+
+      '<p><b>The Cuban Neurosciences Center (CNEURO)</b> is located in Havana, Cuba.</p>'+
+      '<p>Website: <a href="http://www.cneuro.cu/" target="blank">cneuro.cu</a></p>'+
+      '</div>';
+makeMarker({
+  position: new google.maps.LatLng(23.075083, -82.456609),
+  title: "The Cuban Neurosciences Center",
+  sidebarItem: "CNEURO",
+  content: contentString,
+  icon: image
+});  
+
 /**
  *   fit viewport to markers
  * commented out as the map is set to focus on the center of the atlantic ocean.
